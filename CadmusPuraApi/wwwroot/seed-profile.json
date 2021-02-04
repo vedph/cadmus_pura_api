@@ -1,0 +1,1552 @@
+﻿{
+  "facets": [
+    {
+      "id": "text",
+      "label": "text",
+      "description": "The texts facet",
+      "colorKey": "2D882D",
+      "partDefinitions": [
+        {
+          "typeId": "it.vedph.categories",
+          "name": "categories",
+          "description": "Item's categories.",
+          "isRequired": true,
+          "colorKey": "98F8F8",
+          "groupKey": "general",
+          "sortKey": "categories"
+        },
+        {
+          "typeId": "it.vedph.historical-date",
+          "name": "date",
+          "description": "Historical date.",
+          "colorKey": "F898F8",
+          "groupKey": "general",
+          "sortKey": "date"
+        },
+        {
+          "typeId": "it.vedph.keywords",
+          "name": "keywords",
+          "description": "Item's keywords.",
+          "colorKey": "99CCFF",
+          "groupKey": "general",
+          "sortKey": "keywords"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "name": "note",
+          "description": "A free text note.",
+          "colorKey": "B0A0F8",
+          "groupKey": "general",
+          "sortKey": "note"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "bibliography",
+          "description": "Bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "general",
+          "sortKey": "bibliography"
+        },
+        {
+          "typeId": "it.vedph.token-text",
+          "roleId": "base-text",
+          "name": "text",
+          "description": "Item's token-based text.",
+          "colorKey": "31AB54",
+          "groupKey": "text",
+          "sortKey": "text",
+          "isRequired": true
+        },
+        {
+          "typeId": "it.vedph.tgr.available-witnesses",
+          "name": "witnesses",
+          "description": "Available witnesses.",
+          "colorKey": "E8E0A9",
+          "groupKey": "text",
+          "sortKey": "witnesses"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.comment",
+          "name": "comments",
+          "description": "Comments on text.",
+          "colorKey": "F8D040",
+          "groupKey": "text",
+          "sortKey": "text-comments"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.apparatus",
+          "name": "apparatus",
+          "description": "Critical apparatus.",
+          "colorKey": "D4E0A4",
+          "groupKey": "text",
+          "sortKey": "text-apparatus"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.var-quotations",
+          "name": "quotations",
+          "description": "Quotations.",
+          "colorKey": "AE62EE",
+          "groupKey": "text",
+          "sortKey": "text-quotations"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:gloss",
+          "name": "glosses",
+          "description": "Glosses.",
+          "colorKey": "4E6E58",
+          "groupKey": "text",
+          "sortKey": "text-glosses"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:interp",
+          "name": "interpolations",
+          "description": "Interpolations.",
+          "colorKey": "4C8577",
+          "groupKey": "text",
+          "sortKey": "text-interpolations"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:transcr",
+          "name": "transcriptions",
+          "description": "Transcriptions.",
+          "colorKey": "A6ECE0",
+          "groupKey": "text",
+          "sortKey": "text-transcriptions"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.interpolations:para",
+          "name": "paratext",
+          "description": "Paratext.",
+          "colorKey": "7ADFBB",
+          "groupKey": "text",
+          "sortKey": "text-paratext"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.tgr.ling-tags",
+          "name": "ling-tags",
+          "description": "Linguistic tags.",
+          "colorKey": "62AEEE",
+          "groupKey": "text",
+          "sortKey": "text-tags"
+        }
+      ]
+    },
+    {
+      "id": "manuscript",
+      "label": "manuscript",
+      "description": "The manuscripts facet",
+      "colorKey": "AA6C39",
+      "partDefinitions": [
+        {
+          "typeId": "it.vedph.categories",
+          "name": "categories",
+          "description": "Item's categories.",
+          "colorKey": "98F8F8",
+          "groupKey": "general",
+          "sortKey": "categories"
+        },
+        {
+          "typeId": "it.vedph.historical-date",
+          "name": "date",
+          "description": "Historical date.",
+          "isRequired": true,
+          "colorKey": "F898F8",
+          "groupKey": "general",
+          "sortKey": "date"
+        },
+        {
+          "typeId": "it.vedph.keywords",
+          "name": "keywords",
+          "description": "Item's keywords.",
+          "colorKey": "99CCFF",
+          "groupKey": "general",
+          "sortKey": "keywords"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "name": "note",
+          "description": "A free text note.",
+          "colorKey": "B0A0F8",
+          "groupKey": "general",
+          "sortKey": "note"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "bibliography",
+          "description": "Bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "general",
+          "sortKey": "bibliography"
+        },
+        {
+          "typeId": "it.vedph.itinera.ms-signatures",
+          "name": "ms signatures",
+          "description": "Manuscript's signatures.",
+          "colorKey": "D7D5DB",
+          "groupKey": "manuscript",
+          "sortKey": "ms-signatures",
+          "isRequired": true
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-places",
+          "name": "ms places",
+          "description": "Manuscript's place(s) of origin.",
+          "colorKey": "41943B",
+          "groupKey": "manuscript",
+          "sortKey": "ms-places",
+          "isRequired": true
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-contents",
+          "name": "ms contents",
+          "description": "Manuscript's contents.",
+          "colorKey": "508B5E",
+          "groupKey": "manuscript",
+          "sortKey": "ms-contents"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-units",
+          "name": "ms units",
+          "description": "Manuscript's units.",
+          "colorKey": "C880C4",
+          "groupKey": "manuscript",
+          "sortKey": "ms-units"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-scripts",
+          "name": "ms scripts",
+          "description": "Manuscript's scripts.",
+          "colorKey": "F5C2B1",
+          "groupKey": "manuscript",
+          "sortKey": "ms-scripts"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-formal-features",
+          "name": "ms features",
+          "description": "Manuscript's formal features.",
+          "colorKey": "72EAF7",
+          "groupKey": "manuscript",
+          "sortKey": "ms-features"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-ornaments",
+          "name": "ms ornaments",
+          "description": "Manuscript's ornamentations.",
+          "colorKey": "4D5EF7",
+          "groupKey": "manuscript",
+          "sortKey": "ms-ornaments"
+        },
+        {
+          "typeId": "it.vedph.tgr.ms-history",
+          "name": "ms history",
+          "description": "Manuscript's history.",
+          "colorKey": "C82222",
+          "groupKey": "manuscript",
+          "sortKey": "ms-history"
+        }
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "id": 1,
+      "label": "complete",
+      "description": "The item is complete.",
+      "colorKey": "F0B880"
+    },
+    {
+      "id": 2,
+      "label": "revised",
+      "description": "The item has been revised.",
+      "colorKey": "80F080"
+    }
+  ],
+  "index": {
+    "writer": {
+      "id": "item-index-writer.mysql"
+    },
+    "reader": {
+      "id": "item-index-reader.mysql"
+    }
+  },
+  "thesauri": [
+    {
+      "id": "model-types@en",
+      "entries": [
+        {
+          "id": "it.vedph.categories",
+          "value": "categories"
+        },
+        {
+          "id": "it.vedph.historical-date",
+          "value": "date"
+        },
+        {
+          "id": "it.vedph.keywords",
+          "value": "keywords"
+        },
+        {
+          "id": "it.vedph.note",
+          "value": "note"
+        },
+        {
+          "id": "it.vedph.bibliography",
+          "value": "bibliography"
+        },
+        {
+          "id": "it.vedph.token-text",
+          "value": "text"
+        },
+        {
+          "id": "it.vedph.tgr.available-witnesses",
+          "value": "witnesses"
+        },
+        {
+          "id": "it.vedph.token-text-layer",
+          "value": "text layer"
+        },
+        {
+          "id": "it.vedph.itinera.ms-signatures",
+          "value": "ms signatures"
+        },
+        {
+          "id": "it.vedph.tgr.ms-places",
+          "value": "ms places"
+        },
+        {
+          "id": "it.vedph.tgr.ms-contents",
+          "value": "ms contents"
+        },
+        {
+          "id": "it.vedph.tgr.ms-units",
+          "value": "ms units"
+        },
+        {
+          "id": "it.vedph.tgr.ms-scripts",
+          "value": "ms scripts"
+        },
+        {
+          "id": "it.vedph.tgr.ms-formal-features",
+          "value": "ms features"
+        },
+        {
+          "id": "it.vedph.tgr.ms-ornaments",
+          "value": "ms ornaments"
+        },
+        {
+          "id": "it.vedph.tgr.ms-history",
+          "value": "ms history"
+        },
+        {
+          "id": "fr.it.vedph.apparatus",
+          "value": "apparatus fr."
+        },
+        {
+          "id": "fr.it.vedph.comment",
+          "value": "comment fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.var-quotations",
+          "value": "quotations fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.interpolations",
+          "value": "interpolations fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.ling-tags",
+          "value": "ling.tags fr."
+        }
+      ]
+    },
+    {
+      "id": "categories@en",
+      "entries": [
+        {
+          "id": "architecture",
+          "value": "architecture"
+        },
+        {
+          "id": "geography",
+          "value": "geography"
+        },
+        {
+          "id": "geography.cities",
+          "value": "geography: cities"
+        },
+        {
+          "id": "geography.regions",
+          "value": "geography: regions"
+        },
+        {
+          "id": "ethnography",
+          "value": "ethnography"
+        },
+        {
+          "id": "ethnography.death",
+          "value": "ethnography: death"
+        },
+        {
+          "id": "ethnography.food",
+          "value": "ethnography: food"
+        },
+        {
+          "id": "ethnography.peoples",
+          "value": "ethnography: peoples"
+        },
+        {
+          "id": "ethnography.religion",
+          "value": "ethnography: religion"
+        },
+        {
+          "id": "ethnography.religion.deities",
+          "value": "ethnography: religion deities"
+        },
+        {
+          "id": "ethnography.religion.rites",
+          "value": "ethnography: religion rites"
+        },
+        {
+          "id": "history",
+          "value": "history"
+        },
+        {
+          "id": "language",
+          "value": "language"
+        },
+        {
+          "id": "language.phonology",
+          "value": "language: phonology"
+        },
+        {
+          "id": "language.morphology",
+          "value": "language: morphology"
+        },
+        {
+          "id": "language.syntax",
+          "value": "language: syntax"
+        },
+        {
+          "id": "literature",
+          "value": "literature"
+        }
+      ]
+    },
+    {
+      "id": "languages@en",
+      "entries": [
+        {
+          "id": "eng",
+          "value": "English"
+        },
+        {
+          "id": "fre",
+          "value": "French"
+        },
+        {
+          "id": "deu",
+          "value": "German"
+        },
+        {
+          "id": "grc",
+          "value": "Ancient Greek"
+        },
+        {
+          "id": "ita",
+          "value": "Italian"
+        },
+        {
+          "id": "lat",
+          "value": "Latin"
+        },
+        {
+          "id": "spa",
+          "value": "Spanish (Castilian)"
+        }
+      ]
+    },
+    {
+      "id": "bibliography-types@en",
+      "entries": [
+        {
+          "id": "book",
+          "value": "book"
+        },
+        {
+          "id": "article-j",
+          "value": "journal article"
+        },
+        {
+          "id": "article-b",
+          "value": "book article"
+        },
+        {
+          "id": "article-p",
+          "value": "proceedings article"
+        },
+        {
+          "id": "review",
+          "value": "review"
+        },
+        {
+          "id": "ebook",
+          "value": "e-book"
+        },
+        {
+          "id": "site",
+          "value": "web site"
+        },
+        {
+          "id": "magazine",
+          "value": "magazine"
+        },
+        {
+          "id": "newspaper",
+          "value": "newspaper"
+        },
+        {
+          "id": "tweet",
+          "value": "tweet"
+        }
+      ]
+    },
+    {
+      "id": "bibliography-author-roles@en",
+      "entries": [
+        {
+          "id": "ed",
+          "value": "editor"
+        },
+        {
+          "id": "tr",
+          "value": "translator"
+        },
+        {
+          "id": "org",
+          "value": "organization"
+        }
+      ]
+    },
+    {
+      "id": "physical-size-units@en",
+      "entries": [
+        {
+          "id": "cm",
+          "value": "cm"
+        },
+        {
+          "id": "mm",
+          "value": "mm"
+        }
+      ]
+    },
+    {
+      "id": "physical-size-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "pag",
+          "value": "page"
+        },
+        {
+          "id": "col",
+          "value": "column"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "margin",
+          "value": "margin"
+        },
+        {
+          "id": "inter",
+          "value": "interlinear"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-author-tags@en",
+      "entries": [
+        {
+          "id": "ind",
+          "value": "other indirect source"
+        },
+        {
+          "id": "phi",
+          "value": "philologist"
+        }
+      ]
+    },
+    {
+      "id": "ms-materials@en",
+      "entries": [
+        {
+          "id": "parchment",
+          "value": "parchment"
+        },
+        {
+          "id": "paper",
+          "value": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ms-ruling-manners@en",
+      "entries": [
+        {
+          "id": "ink",
+          "value": "ink"
+        },
+        {
+          "id": "lead-pt",
+          "value": "lead point"
+        }
+      ]
+    },
+    {
+      "id": "ms-ruling-systems@en",
+      "entries": [
+        {
+          "id": "direct",
+          "value": "direct"
+        },
+        {
+          "id": "transmitted",
+          "value": "transmitted"
+        }
+      ]
+    },
+    {
+      "id": "ms-script-roles@en",
+      "entries": [
+        {
+          "id": "main",
+          "value": "main hand"
+        },
+        {
+          "id": "secondary",
+          "value": "secondary hand"
+        },
+        {
+          "id": "inferior",
+          "value": "scriptio inferior"
+        },
+        {
+          "id": "superior",
+          "value": "scriptio superior"
+        }
+      ]
+    },
+    {
+      "id": "ms-languages@en",
+      "targetId": "interpolation-languages@en"
+    },
+    {
+      "id": "ms-script-types@en",
+      "entries": [
+        {
+          "id": "cap",
+          "value": "Capitalis"
+        },
+        {
+          "id": "o-rom-cur",
+          "value": "Older Roman cursive (majuscule)"
+        },
+        {
+          "id": "l-rom-cur",
+          "value": "Later Roman cursive (minuscule)"
+        },
+        {
+          "id": "unc",
+          "value": "Uncial"
+        },
+        {
+          "id": "h-unc",
+          "value": "Half-uncial"
+        },
+        {
+          "id": "h-unc.-",
+          "value": "Half-uncial"
+        },
+        {
+          "id": "h-unc.o",
+          "value": "Older (eastern) half-uncial"
+        },
+        {
+          "id": "h-unc.l",
+          "value": "Later half-uncial"
+        },
+        {
+          "id": "isl",
+          "value": "Insular"
+        },
+        {
+          "id": "isl.ir",
+          "value": "Insular: Irish"
+        },
+        {
+          "id": "isl.ir.h-unc",
+          "value": "Insular: Irish half-uncial"
+        },
+        {
+          "id": "isl.ir.min",
+          "value": "Insular: Irish minuscule"
+        },
+        {
+          "id": "isl.ir.cur",
+          "value": "Insular: Irish cursive"
+        },
+        {
+          "id": "isl.a-s",
+          "value": "Insular: Anglo-Saxon"
+        },
+        {
+          "id": "isl.a-s.h-unc",
+          "value": "Insular: Anglo-Saxon half-uncial"
+        },
+        {
+          "id": "isl.a-s.min",
+          "value": "Insular: Anglo-Saxon minuscule"
+        },
+        {
+          "id": "isl.a-s.cur",
+          "value": "Insular: Anglo-Saxon cursive"
+        },
+        {
+          "id": "isl.cel",
+          "value": "Insular: other Celtic"
+        },
+        {
+          "id": "vis",
+          "value": "Visigothic"
+        },
+        {
+          "id": "vis.min",
+          "value": "Visigothic minuscule"
+        },
+        {
+          "id": "vis.cur",
+          "value": "Visigothic cursive"
+        },
+        {
+          "id": "sin",
+          "value": "Sinai"
+        },
+        {
+          "id": "sin.min",
+          "value": "Sinai minuscule"
+        },
+        {
+          "id": "n-ita",
+          "value": "north-Italian"
+        },
+        {
+          "id": "n-ita.cur",
+          "value": "north-Italian cursive"
+        },
+        {
+          "id": "n-ita.min",
+          "value": "north-Italian minuscule"
+        },
+        {
+          "id": "mer",
+          "value": "Merovingian"
+        },
+        {
+          "id": "mer.cur",
+          "value": "Merovingian cursive"
+        },
+        {
+          "id": "mer.lux",
+          "value": "Merovingian: Luxeuil type"
+        },
+        {
+          "id": "mer.ab",
+          "value": "Merovingian: ab-type"
+        },
+        {
+          "id": "mer.az",
+          "value": "Merovingian: az-type"
+        },
+        {
+          "id": "mer.b",
+          "value": "Merovingian: b-type"
+        },
+        {
+          "id": "mer.mordr",
+          "value": "Merovingian: Mordramnus minuscule"
+        },
+        {
+          "id": "car",
+          "value": "Caroline minuscule"
+        },
+        {
+          "id": "car.fra",
+          "value": "Caroline minuscule: French"
+        },
+        {
+          "id": "car.deu",
+          "value": "Caroline minuscule: German"
+        },
+        {
+          "id": "car.n-ita",
+          "value": "Caroline minuscule: north-Italian"
+        },
+        {
+          "id": "car.rom",
+          "value": "Caroline minuscule: Roman"
+        },
+        {
+          "id": "ben",
+          "value": "Beneventan script"
+        },
+        {
+          "id": "ben.-",
+          "value": "Beneventan script"
+        },
+        {
+          "id": "ben.mc",
+          "value": "Beneventan script: Monte Cassino"
+        },
+        {
+          "id": "ben.ba",
+          "value": "Beneventan script: Bari"
+        },
+        {
+          "id": "goth",
+          "value": "Gothic textura (textualis)"
+        },
+        {
+          "id": "bast",
+          "value": "Bastarda"
+        },
+        {
+          "id": "hum",
+          "value": "Humanistic"
+        },
+        {
+          "id": "hum.cur",
+          "value": "Humanistic cursive"
+        },
+        {
+          "id": "hum.min",
+          "value": "Humanistic minuscule"
+        }
+      ]
+    },
+    {
+      "id": "ms-ornament-types@en",
+      "entries": [
+        {
+          "id": "cycle",
+          "value": "cycle of illustrations"
+        },
+        {
+          "id": "dec",
+          "value": "decoration"
+        },
+        {
+          "id": "dec.fig",
+          "value": "figurative decoration"
+        },
+        {
+          "id": "dec.geom",
+          "value": "geometric decoration"
+        },
+        {
+          "id": "dec.hist",
+          "value": "historiated decoration"
+        },
+        {
+          "id": "display-script",
+          "value": "display script"
+        },
+        {
+          "id": "drolerie",
+          "value": "drôlerie"
+        },
+        {
+          "id": "figure",
+          "value": "figure"
+        },
+        {
+          "id": "illustr",
+          "value": "illustration"
+        },
+        {
+          "id": "init",
+          "value": "initial"
+        },
+        {
+          "id": "init.ch",
+          "value": "champ initial"
+        },
+        {
+          "id": "init.flor-fol",
+          "value": "floriate / foliate initial"
+        },
+        {
+          "id": "init.fig",
+          "value": "figured initial"
+        },
+        {
+          "id": "init.hist",
+          "value": "historiated initial"
+        },
+        {
+          "id": "init.pen-flour",
+          "value": "pen-flourished initial"
+        },
+        {
+          "id": "init.pl",
+          "value": "plain initial / Lombard"
+        },
+        {
+          "id": "lett",
+          "value": "letter"
+        },
+        {
+          "id": "lett.facet",
+          "value": "facetted letter"
+        },
+        {
+          "id": "lett.highl",
+          "value": "highlighted / colour-stroked letter"
+        },
+        {
+          "id": "lett.interl",
+          "value": "interlocked letter"
+        },
+        {
+          "id": "lett.voi",
+          "value": "voided letter"
+        },
+        {
+          "id": "lettrine",
+          "value": "lettrine"
+        },
+        {
+          "id": "miniature",
+          "value": "miniature"
+        },
+        {
+          "id": "panel",
+          "value": "panel"
+        },
+        {
+          "id": "portrait",
+          "value": "portrait"
+        },
+        {
+          "id": "rubric",
+          "value": "rubric / heading"
+        }
+      ]
+    },
+    {
+      "id": "ms-signature-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "former",
+          "value": "former"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-roles@en",
+      "entries": [
+        {
+          "id": "interp",
+          "value": "humanistic interpolation"
+        },
+        {
+          "id": "paleo",
+          "value": "paleographic transcription"
+        },
+        {
+          "id": "gloss",
+          "value": "gloss"
+        },
+        {
+          "id": "paratext",
+          "value": "paratext"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-languages@en",
+      "entries": [
+        {
+          "id": "bre",
+          "value": "Breton"
+        },
+        {
+          "id": "frk",
+          "value": "Frankish"
+        },
+        {
+          "id": "fro",
+          "value": "French, Old"
+        },
+        {
+          "id": "ghc",
+          "value": "Gaelic, Hiberno-Scottish"
+        },
+        {
+          "id": "goh",
+          "value": "German, Old High"
+        },
+        {
+          "id": "got",
+          "value": "Gothic"
+        },
+        {
+          "id": "grc",
+          "value": "Greek, Ancient"
+        },
+        {
+          "id": "lng",
+          "value": "Langobardic"
+        },
+        {
+          "id": "lat",
+          "value": "Latin"
+        }
+      ]
+    },
+    {
+      "id": "interpolation-tags@en",
+      "targetId": "apparatus-tags@en"
+    },
+    {
+      "id": "quotation-tags@en",
+      "entries": [
+        {
+          "id": "-",
+          "value": "---"
+        },
+        {
+          "id": "cf",
+          "value": "cf."
+        }
+      ]
+    },
+    {
+      "id": "quotation-authorities@en",
+      "entries": [
+        {
+          "id": "gram",
+          "value": "grammatical"
+        },
+        {
+          "id": "ling",
+          "value": "linguistic"
+        }
+      ]
+    },
+    {
+      "id": "author-works@en",
+      "entries": []
+    },
+    {
+      "id": "ling-tags@en",
+      "entries": []
+    },
+    {
+      "id": "ling-tags-aux@en",
+      "entries": [
+        {
+          "id": "a.mtr.sch-fig--note",
+          "value": "note"
+        },
+        {
+          "id": "a.mtr.species--note",
+          "value": "note"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.arus@en",
+      "entries": [
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "d",
+          "value": "D"
+        },
+        {
+          "id": "g",
+          "value": "G"
+        },
+        {
+          "id": "n1",
+          "value": "N1"
+        },
+        {
+          "id": "n2",
+          "value": "N2"
+        },
+        {
+          "id": "ox1",
+          "value": "Ox1"
+        },
+        {
+          "id": "ox2",
+          "value": "Ox2"
+        },
+        {
+          "id": "ox3",
+          "value": "Ox3"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "u",
+          "value": "U"
+        },
+        {
+          "id": "v1",
+          "value": "V1"
+        },
+        {
+          "id": "v2",
+          "value": "V2"
+        },
+        {
+          "id": "v3",
+          "value": "V3"
+        },
+        {
+          "id": "v4",
+          "value": "V4"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.nom-dub@en",
+      "entries": [
+        {
+          "id": "l",
+          "value": "L"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "w",
+          "value": "W"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. MW"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus αL"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.ps-aug-reg@en",
+      "entries": [
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "e",
+          "value": "E"
+        },
+        {
+          "id": "f",
+          "value": "F"
+        },
+        {
+          "id": "k",
+          "value": "K"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "g",
+          "value": "G"
+        },
+        {
+          "id": "h",
+          "value": "H"
+        },
+        {
+          "id": "r",
+          "value": "R"
+        },
+        {
+          "id": "u",
+          "value": "U"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus codd. Oα"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. βF"
+        },
+        {
+          "id": "beta",
+          "value": "β: consensus codd. EV"
+        },
+        {
+          "id": "epsilon",
+          "value": "ε: consensus codd. BP"
+        },
+        {
+          "id": "stigma",
+          "value": "ς: consensus edd. UKAGRH"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.ps-palaem-reg@en",
+      "entries": [
+        {
+          "id": "a",
+          "value": "A"
+        },
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "n",
+          "value": "N"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "r",
+          "value": "R"
+        },
+        {
+          "id": "s",
+          "value": "S"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "w",
+          "value": "W"
+        },
+        {
+          "id": "x",
+          "value": "X"
+        },
+        {
+          "id": "omega",
+          "value": "ω: consensus codd. Oα"
+        },
+        {
+          "id": "alpha",
+          "value": "α: consensus codd. Aμ"
+        },
+        {
+          "id": "my",
+          "value": "μ: consensus codd. Mπ"
+        },
+        {
+          "id": "pi",
+          "value": "π: consensus codd. νξ"
+        },
+        {
+          "id": "ny",
+          "value": "ν: consensus codd. BN(R)"
+        },
+        {
+          "id": "ksi",
+          "value": "ξ: consensus codd. VW(X)"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.scaur-orth@en",
+      "entries": [
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "p2",
+          "value": "P2: manus aequalis, fortasse scribae ipsius, coccino atramento usa"
+        },
+        {
+          "id": "p3",
+          "value": "P3: manus aequalis, pullo atramento usa"
+        },
+        {
+          "id": "p4",
+          "value": "P4: manus recentior, saec. XVI ut videtur, purpureo atramento usa"
+        },
+        {
+          "id": "p5",
+          "value": "P5: manus recentior, Angeli Mai ut puto, nigro atramento usa"
+        },
+        {
+          "id": "omega",
+          "value": "ω"
+        },
+        {
+          "id": "v",
+          "value": "V"
+        },
+        {
+          "id": "b",
+          "value": "B"
+        },
+        {
+          "id": "psi",
+          "value": "ψ"
+        },
+        {
+          "id": "fs",
+          "value": "Fs"
+        },
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "fn",
+          "value": "Fn"
+        },
+        {
+          "id": "s",
+          "value": "S"
+        },
+        {
+          "id": "f",
+          "value": "F"
+        },
+        {
+          "id": "l",
+          "value": "L"
+        }
+      ]
+    },
+    {
+      "id": "apparatus-witnesses.vel-orth@en",
+      "entries": [
+        {
+          "id": "m",
+          "value": "M"
+        },
+        {
+          "id": "m1",
+          "value": "M1: scriba codicis M se ipse ut videtur corrigens"
+        },
+        {
+          "id": "m2",
+          "value": "M2: manus altera codicis M"
+        },
+        {
+          "id": "m3",
+          "value": "M3: manus Ant. Seripandi (f. 1r)"
+        },
+        {
+          "id": "n",
+          "value": "N"
+        },
+        {
+          "id": "o",
+          "value": "O"
+        },
+        {
+          "id": "p",
+          "value": "P"
+        },
+        {
+          "id": "p2",
+          "value": "P2: manus altera codicis P (A. Manutius Iunior?)"
+        },
+        {
+          "id": "rom1587",
+          "value": "Rom. 1587"
+        }
+      ]
+    }
+  ],
+  "seed": {
+    "options": {
+      "seed": 1,
+      "users": ["zeus"],
+      "partRoles": [],
+      "fragmentRoles": []
+    },
+    "partSeeders": [
+      {
+        "id": "seed.it.vedph.categories",
+        "options": {
+          "maxCategoriesPerItem": 3,
+          "categories": [
+            "language.phonology",
+            "language.morphology",
+            "language.syntax",
+            "literature",
+            "geography"
+          ]
+        }
+      },
+      {
+        "id": "seed.it.vedph.historical-date"
+      },
+      {
+        "id": "seed.it.vedph.keywords",
+        "options": {
+          "languages": [ "eng", "deu", "ita", "fra", "spa" ]
+        }
+      },
+      {
+        "id": "seed.it.vedph.bibliography",
+        "options": {
+          "authors": [
+            "Doe,Jane",
+            "Doherty,Charles",
+            "Orwell,William",
+            "Sampson,James",
+            "Voss,Francis"
+          ],
+          "journals": [ "AJPh", "CJ", "CPh", "CQ", "IF" ]
+        }
+      },
+      {
+        "id": "seed.it.vedph.note",
+        "options": {
+          "tags": [ "language", "history", "geography" ]
+        }
+      },
+      {
+        "id": "seed.it.vedph.token-text"
+      },
+      {
+        "id": "seed.it.vedph.tgr.available-witnesses"
+      },
+      {
+        "id": "seed.it.vedph.token-text-layer",
+        "options": {
+          "maxFragmentCount": 3
+        }
+      },
+      {
+        "id": "seed.it.vedph.itinera.ms-signatures"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-places"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-contents"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-units"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-scripts"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-formal-features"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-ornaments"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-history"
+      }
+    ],
+    "fragmentSeeders": [
+      {
+        "id": "seed.fr.it.vedph.comment",
+        "options": {
+          "tags": [ "language", "history", "geography" ]
+        }
+      },
+      {
+        "id": "seed.fr.it.vedph.apparatus"
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.ling-tags",
+        "options": {
+          "entries": [
+            {
+              "id": "a.syl.accentus.a",
+              "value": "syllaba: accentus/tenor: acutus/ὀξεῖα"
+            },
+            {
+              "id": "a.syl.accentus.c",
+              "value": "syllaba: accentus/tenor: circumflexus/περισπωμένη"
+            },
+            {
+              "id": "a.syl.accentus.g",
+              "value": "syllaba: accentus/tenor: gravis/βαρεῖα"
+            }
+          ]
+        }
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.var-quotations"
+      },
+      {
+        "id": "seed.fr.it.vedph.tgr.interpolations"
+      }
+    ]
+  }
+}
