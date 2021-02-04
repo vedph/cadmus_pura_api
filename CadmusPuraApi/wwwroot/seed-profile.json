@@ -1,43 +1,43 @@
 ﻿{
   "facets": [
     {
-      "id": "text",
-      "label": "text",
-      "description": "The texts facet",
-      "colorKey": "2D882D",
+      "id": "lemma",
+      "label": "lemma",
+      "description": "The lexicographic facet.",
+      "colorKey": "882D2D",
       "partDefinitions": [
+        {
+          "typeId": "it.vedph.pura.word-forms",
+          "name": "forms",
+          "description": "Word's forms.",
+          "isRequired": true,
+          "colorKey": "E8E0A9",
+          "groupKey": "lexicon",
+          "sortKey": "forms"
+        },
         {
           "typeId": "it.vedph.categories",
           "name": "categories",
-          "description": "Item's categories.",
-          "isRequired": true,
+          "description": "Categories.",
           "colorKey": "98F8F8",
           "groupKey": "general",
           "sortKey": "categories"
         },
         {
-          "typeId": "it.vedph.historical-date",
-          "name": "date",
-          "description": "Historical date.",
-          "colorKey": "F898F8",
-          "groupKey": "general",
-          "sortKey": "date"
-        },
-        {
-          "typeId": "it.vedph.keywords",
-          "name": "keywords",
-          "description": "Item's keywords.",
-          "colorKey": "99CCFF",
+          "typeId": "it.vedph.index-keywords",
+          "name": "index keywords",
+          "description": "Index keywords.",
+          "colorKey": "588BBF",
           "groupKey": "general",
           "sortKey": "keywords"
         },
         {
-          "typeId": "it.vedph.note",
-          "name": "note",
-          "description": "A free text note.",
-          "colorKey": "B0A0F8",
+          "typeId": "it.vedph.comment",
+          "name": "comment",
+          "description": "Comment.",
+          "colorKey": "B2E0AA",
           "groupKey": "general",
-          "sortKey": "note"
+          "sortKey": "comment"
         },
         {
           "typeId": "it.vedph.bibliography",
@@ -46,33 +46,57 @@
           "colorKey": "20B2AA",
           "groupKey": "general",
           "sortKey": "bibliography"
-        },
+        }
+      ]
+    },
+    {
+      "id": "text",
+      "label": "text",
+      "description": "The texts facet",
+      "colorKey": "2D882D",
+      "partDefinitions": [
         {
           "typeId": "it.vedph.token-text",
           "roleId": "base-text",
           "name": "text",
-          "description": "Item's token-based text.",
+          "description": "Token-based text.",
+          "isRequired": true,
           "colorKey": "31AB54",
           "groupKey": "text",
-          "sortKey": "text",
-          "isRequired": true
+          "sortKey": "text"
         },
         {
-          "typeId": "it.vedph.tgr.available-witnesses",
-          "name": "witnesses",
-          "description": "Available witnesses.",
-          "colorKey": "E8E0A9",
-          "groupKey": "text",
-          "sortKey": "witnesses"
+          "typeId": "it.vedph.note",
+          "roleId": "transl",
+          "name": "note",
+          "description": "Text translation.",
+          "colorKey": "B0A0F8",
+          "groupKey": "general",
+          "sortKey": "note"
         },
         {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.comment",
-          "name": "comments",
-          "description": "Comments on text.",
-          "colorKey": "F8D040",
-          "groupKey": "text",
-          "sortKey": "text-comments"
+          "typeId": "it.vedph.categories",
+          "name": "categories",
+          "description": "Categories.",
+          "colorKey": "98F8F8",
+          "groupKey": "general",
+          "sortKey": "categories"
+        },
+        {
+          "typeId": "it.vedph.index-keywords",
+          "name": "index keywords",
+          "description": "Index keywords.",
+          "colorKey": "588BBF",
+          "groupKey": "general",
+          "sortKey": "keywords"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "bibliography",
+          "description": "Bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "general",
+          "sortKey": "bibliography"
         },
         {
           "typeId": "it.vedph.token-text-layer",
@@ -85,48 +109,12 @@
         },
         {
           "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.var-quotations",
-          "name": "quotations",
-          "description": "Quotations.",
-          "colorKey": "AE62EE",
+          "roleId": "fr.it.vedph.comment",
+          "name": "comments",
+          "description": "Comments on text.",
+          "colorKey": "F8D040",
           "groupKey": "text",
-          "sortKey": "text-quotations"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interpolations:gloss",
-          "name": "glosses",
-          "description": "Glosses.",
-          "colorKey": "4E6E58",
-          "groupKey": "text",
-          "sortKey": "text-glosses"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interpolations:interp",
-          "name": "interpolations",
-          "description": "Interpolations.",
-          "colorKey": "4C8577",
-          "groupKey": "text",
-          "sortKey": "text-interpolations"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interpolations:transcr",
-          "name": "transcriptions",
-          "description": "Transcriptions.",
-          "colorKey": "A6ECE0",
-          "groupKey": "text",
-          "sortKey": "text-transcriptions"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.interpolations:para",
-          "name": "paratext",
-          "description": "Paratext.",
-          "colorKey": "7ADFBB",
-          "groupKey": "text",
-          "sortKey": "text-paratext"
+          "sortKey": "text-comments"
         },
         {
           "typeId": "it.vedph.token-text-layer",
@@ -161,14 +149,6 @@
           "colorKey": "F898F8",
           "groupKey": "general",
           "sortKey": "date"
-        },
-        {
-          "typeId": "it.vedph.keywords",
-          "name": "keywords",
-          "description": "Item's keywords.",
-          "colorKey": "99CCFF",
-          "groupKey": "general",
-          "sortKey": "keywords"
         },
         {
           "typeId": "it.vedph.note",
@@ -229,14 +209,6 @@
           "sortKey": "ms-scripts"
         },
         {
-          "typeId": "it.vedph.tgr.ms-formal-features",
-          "name": "ms features",
-          "description": "Manuscript's formal features.",
-          "colorKey": "72EAF7",
-          "groupKey": "manuscript",
-          "sortKey": "ms-features"
-        },
-        {
           "typeId": "it.vedph.tgr.ms-ornaments",
           "name": "ms ornaments",
           "description": "Manuscript's ornamentations.",
@@ -282,20 +254,20 @@
       "id": "model-types@en",
       "entries": [
         {
+          "id": "it.vedph.pura.word-forms",
+          "value": "forms"
+        },
+        {
           "id": "it.vedph.categories",
           "value": "categories"
         },
         {
-          "id": "it.vedph.historical-date",
-          "value": "date"
-        },
-        {
-          "id": "it.vedph.keywords",
+          "id": "it.vedph.index-keywords",
           "value": "keywords"
         },
         {
-          "id": "it.vedph.note",
-          "value": "note"
+          "id": "it.vedph.comment",
+          "value": "comment"
         },
         {
           "id": "it.vedph.bibliography",
@@ -306,12 +278,28 @@
           "value": "text"
         },
         {
-          "id": "it.vedph.tgr.available-witnesses",
-          "value": "witnesses"
+          "id": "it.vedph.note",
+          "value": "note"
         },
         {
           "id": "it.vedph.token-text-layer",
           "value": "text layer"
+        },
+        {
+          "id": "fr.it.vedph.apparatus",
+          "value": "apparatus fr."
+        },
+        {
+          "id": "fr.it.vedph.comment",
+          "value": "comment fr."
+        },
+        {
+          "id": "fr.it.vedph.tgr.ling-tags",
+          "value": "ling.tags fr."
+        },
+        {
+          "id": "it.vedph.historical-date",
+          "value": "date"
         },
         {
           "id": "it.vedph.itinera.ms-signatures",
@@ -334,36 +322,12 @@
           "value": "ms scripts"
         },
         {
-          "id": "it.vedph.tgr.ms-formal-features",
-          "value": "ms features"
-        },
-        {
           "id": "it.vedph.tgr.ms-ornaments",
           "value": "ms ornaments"
         },
         {
           "id": "it.vedph.tgr.ms-history",
           "value": "ms history"
-        },
-        {
-          "id": "fr.it.vedph.apparatus",
-          "value": "apparatus fr."
-        },
-        {
-          "id": "fr.it.vedph.comment",
-          "value": "comment fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.var-quotations",
-          "value": "quotations fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.interpolations",
-          "value": "interpolations fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.ling-tags",
-          "value": "ling.tags fr."
         }
       ]
     },
