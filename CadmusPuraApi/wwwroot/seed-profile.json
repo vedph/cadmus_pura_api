@@ -124,6 +124,15 @@
           "colorKey": "62AEEE",
           "groupKey": "text",
           "sortKey": "text-tags"
+        },
+        {
+          "typeId": "it.vedph.token-text-layer",
+          "roleId": "fr.it.vedph.pura.lemma-tag",
+          "name": "lemma-tags",
+          "description": "Lemma tags.",
+          "colorKey": "62EEAE",
+          "groupKey": "text",
+          "sortKey": "lemma-tags"
         }
       ]
     },
@@ -296,6 +305,10 @@
         {
           "id": "fr.it.vedph.tgr.ling-tags",
           "value": "ling.tags fr."
+        },
+        {
+          "id": "fr.it.vedph.pura.lemma-tag",
+          "value": "lemma tags"
         },
         {
           "id": "it.vedph.historical-date",
@@ -1504,6 +1517,9 @@
             }
           ]
         }
+      },
+      {
+        "id": "seed.fr.it.vedph.pura.lemma-tag"
       },
       {
         "id": "seed.fr.it.vedph.tgr.var-quotations"
