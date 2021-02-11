@@ -348,8 +348,16 @@
       "id": "categories@en",
       "entries": [
         {
+          "id": "ph",
+          "value": "phonology"
+        },
+        {
           "id": "ph.-",
           "value": "phonology"
+        },
+        {
+          "id": "ph.v",
+          "value": "phonology: vowels"
         },
         {
           "id": "ph.v.-",
@@ -357,139 +365,151 @@
         },
         {
           "id": "ph.v.a",
-          "value": "phonology: vowels: /a/"
+          "value": "phonology: vowels: a"
         },
         {
           "id": "ph.v.ae",
-          "value": "phonology: vowels: /æ/"
+          "value": "phonology: vowels: ae"
         },
         {
           "id": "ph.v.e-h",
-          "value": "phonology: vowels: /e/"
+          "value": "phonology: vowels: short closed e"
         },
         {
           "id": "ph.v.e2-l",
-          "value": "phonology: vowels: /ε:/"
+          "value": "phonology: vowels: long open e"
         },
         {
           "id": "ph.v.e2-h",
-          "value": "phonology: vowels: /e:/"
+          "value": "phonology: vowels: long closed e"
         },
         {
           "id": "ph.v.i",
-          "value": "phonology: vowels: /i/"
+          "value": "phonology: vowels: short i"
         },
         {
           "id": "ph.v.i2",
-          "value": "phonology: vowels: /i:/"
+          "value": "phonology: vowels: long i"
         },
         {
           "id": "ph.v.o-h",
-          "value": "phonology: vowels: /o/"
+          "value": "phonology: vowels: short o"
         },
         {
           "id": "ph.v.o2-l",
-          "value": "phonology: vowels: /ɔ:/"
+          "value": "phonology: vowels: long open o"
         },
         {
           "id": "ph.v.o2-h",
-          "value": "phonology: vowels: /o:/"
+          "value": "phonology: vowels: long closed o"
         },
         {
           "id": "ph.v.y",
-          "value": "phonology: vowels: /y/"
+          "value": "phonology: vowels: short y"
         },
         {
           "id": "ph.v.y2",
-          "value": "phonology: vowels: /y:/"
+          "value": "phonology: vowels: long y"
         },
         {
           "id": "ph.v.u",
-          "value": "phonology: vowels: /u/"
+          "value": "phonology: vowels: short u"
         },
         {
           "id": "ph.v.u2",
-          "value": "phonology: vowels: /u:/"
+          "value": "phonology: vowels: long u"
+        },
+        {
+          "id": "ph.w",
+          "value": "phonology: semi-vowels"
         },
         {
           "id": "ph.w.-",
-          "value": "phonology: semi-vowels: -"
+          "value": "phonology: semi-vowels"
         },
         {
           "id": "ph.w.e-c",
-          "value": "phonology: semi-vowels: /e̯/"
+          "value": "phonology: semi-vowels: e"
         },
         {
           "id": "ph.w.i-c",
-          "value": "phonology: semi-vowels: /i̯/"
+          "value": "phonology: semi-vowels: i"
         },
         {
           "id": "ph.w.o-c",
-          "value": "phonology: semi-vowels: /o̯/"
+          "value": "phonology: semi-vowels: o"
         },
         {
           "id": "ph.w.u-c",
-          "value": "phonology: semi-vowels: /u̯/"
+          "value": "phonology: semi-vowels: u"
+        },
+        {
+          "id": "ph.vv",
+          "value": "phonology: diphthongs"
         },
         {
           "id": "ph.vv.-",
-          "value": "phonology: diphthongs: -"
+          "value": "phonology: diphthongs"
         },
         {
           "id": "ph.vv.ai",
-          "value": "phonology: diphthongs: /ai̯ /"
+          "value": "phonology: diphthongs: short ai"
         },
         {
           "id": "ph.vv.a2i",
-          "value": "phonology: diphthongs: /a:i̯/"
+          "value": "phonology: diphthongs: long ai"
         },
         {
           "id": "ph.vv.au",
-          "value": "phonology: diphthongs: /au̯/"
+          "value": "phonology: diphthongs: short au"
         },
         {
           "id": "ph.vv.a2u",
-          "value": "phonology: diphthongs: /a:u̯/"
+          "value": "phonology: diphthongs: long au"
         },
         {
           "id": "ph.vv.ei",
-          "value": "phonology: diphthongs: /ei/"
+          "value": "phonology: diphthongs: short ei"
         },
         {
           "id": "ph.vv.e2i",
-          "value": "phonology: diphthongs: /e:i̯/"
+          "value": "phonology: diphthongs: long ei"
         },
         {
           "id": "ph.vv.eu",
-          "value": "phonology: diphthongs: /eu̯/"
+          "value": "phonology: diphthongs: short eu"
         },
         {
           "id": "ph.vv.e2u",
-          "value": "phonology: diphthongs: /e:u̯/"
+          "value": "phonology: diphthongs: long eu"
         },
         {
           "id": "ph.vv.oi",
-          "value": "phonology: diphthongs: /oi̯/"
+          "value": "phonology: diphthongs: short oi"
         },
         {
           "id": "ph.vv.o2i",
-          "value": "phonology: diphthongs: /o:i̯/"
+          "value": "phonology: diphthongs: long oi"
         },
         {
           "id": "ph.vv.ou",
-          "value": "phonology: diphthongs: /ou̯/"
+          "value": "phonology: diphthongs: short ou"
         },
         {
           "id": "ph.vv.o2u",
-          "value": "phonology: diphthongs: /o:u̯/"
+          "value": "phonology: diphthongs: long ou"
         },
         {
           "id": "ph.vv.ui",
-          "value": "phonology: diphthongs: /ui̯/"
+          "value": "phonology: diphthongs: ui"
+        },
+        {
+          "id": "ph.c",
+          "value": "phonology: consonants"
         },
         {
           "id": "ph.c.-",
-          "value": "phonology: consonants: -"
+          "value": "phonology: consonants"
         },
         {
           "id": "ph.c.p",
@@ -564,8 +584,12 @@
           "value": "phonology: consonants: /h/"
         },
         {
+          "id": "ph.chg",
+          "value": "phonology: sound change"
+        },
+        {
           "id": "ph.chg.-",
-          "value": "phonology: sound change: -"
+          "value": "phonology: sound change"
         },
         {
           "id": "ph.chg.s-0",
@@ -573,11 +597,11 @@
         },
         {
           "id": "ph.chg.w-0",
-          "value": "phonology: sound change: /u̯/ > ø"
+          "value": "phonology: sound change: w > ø"
         },
         {
           "id": "ph.chg.j-h-dz",
-          "value": "phonology: sound change: *i̯ > /h/, /dz/"
+          "value": "phonology: sound change: *j > /h/, /dz/"
         },
         {
           "id": "ph.chg.laryn",
@@ -585,11 +609,11 @@
         },
         {
           "id": "ph.chg.grassmann",
-          "value": "phonology: sound change: Grassmann’s Law"
+          "value": "phonology: sound change: Grassmann's Law"
         },
         {
           "id": "ph.chg.osthoff",
-          "value": "phonology: sound change: Osthoff’s Law"
+          "value": "phonology: sound change: Osthoff's Law"
         },
         {
           "id": "ph.chg.sonorants-v",
@@ -597,7 +621,7 @@
         },
         {
           "id": "ph.chg.palataliz",
-          "value": "phonology: sound change: palatalisation C + /i̯/"
+          "value": "phonology: sound change: palatalisation C+j"
         },
         {
           "id": "ph.chg.labv",
@@ -633,7 +657,7 @@
         },
         {
           "id": "ph.chg.a2-e2",
-          "value": "phonology: sound change: Attic-Ionic /a:/ > /ε:/"
+          "value": "phonology: sound change: Attic-Ionic long a > e"
         },
         {
           "id": "ph.chg.att-reversion",
@@ -664,12 +688,24 @@
           "value": "phonology: sound change: accent"
         },
         {
+          "id": "mo",
+          "value": "morphology"
+        },
+        {
           "id": "mo.-",
           "value": "morphology"
         },
         {
+          "id": "mo.n",
+          "value": "morphology: nominal inflection"
+        },
+        {
           "id": "mo.n.-",
           "value": "morphology: nominal inflection"
+        },
+        {
+          "id": "mo.n.1",
+          "value": "morphology: nominal inflection: 1st declension"
         },
         {
           "id": "mo.n.1.-",
@@ -682,6 +718,10 @@
         {
           "id": "mo.n.1.m",
           "value": "morphology: nominal inflection: 1st declension: masculine nouns"
+        },
+        {
+          "id": "mo.n.2",
+          "value": "morphology: nominal inflection: 2nd declension"
         },
         {
           "id": "mo.n.2.-",
@@ -698,6 +738,10 @@
         {
           "id": "mo.n.2.n",
           "value": "morphology: nominal inflection: 2nd declension: neuter nouns"
+        },
+        {
+          "id": "mo.n.3",
+          "value": "morphology: nominal inflection: 3rd declension"
         },
         {
           "id": "mo.n.3.-",
@@ -740,6 +784,10 @@
           "value": "morphology: nominal inflection: 3rd declension: stems in diphthongs"
         },
         {
+          "id": "mo.n.adj",
+          "value": "morphology: nominal inflection: adjectives"
+        },
+        {
           "id": "mo.n.adj.-",
           "value": "morphology: nominal inflection: adjectives"
         },
@@ -766,6 +814,10 @@
         {
           "id": "mo.n.adv",
           "value": "morphology: nominal inflection: adverbs"
+        },
+        {
+          "id": "mo.wf",
+          "value": "morphology: word-formation"
         },
         {
           "id": "mo.wf.-",
@@ -800,8 +852,12 @@
           "value": "morphology: word-formation: verbal adjectives"
         },
         {
+          "id": "mo.wf.compound",
+          "value": "morphology: word-formation: compounds"
+        },
+        {
           "id": "mo.wf.compound.-",
-          "value": ""
+          "value": "morphology: word-formation: compounds"
         },
         {
           "id": "mo.wf.compound.possessive",
@@ -822,6 +878,10 @@
         {
           "id": "mo.wf.compound.prep1",
           "value": "morphology: word-formation: compounds: prepositional 1st"
+        },
+        {
+          "id": "mo.v",
+          "value": "morphology: verbal morphology"
         },
         {
           "id": "mo.v.-",
@@ -864,8 +924,12 @@
           "value": "morphology: verbal morphology: personal endings"
         },
         {
+          "id": "mo.v.tense",
+          "value": "morphology: verbal morphology: tense"
+        },
+        {
           "id": "mo.v.tense.-",
-          "value": "morphology: verbal morphology: tense: -"
+          "value": "morphology: verbal morphology: tense"
         },
         {
           "id": "mo.v.tense.pres",
@@ -890,6 +954,10 @@
         {
           "id": "mo.v.tense.ppf",
           "value": "morphology: verbal morphology: tense: pluperfect"
+        },
+        {
+          "id": "mo.v.mood",
+          "value": "morphology: verbal morphology: mood"
         },
         {
           "id": "mo.v.mood.-",
@@ -920,6 +988,10 @@
           "value": "morphology: verbal morphology: mood: participle"
         },
         {
+          "id": "mo.v.voice",
+          "value": "morphology: verbal morphology: voice"
+        },
+        {
           "id": "mo.v.voice.-",
           "value": "morphology: verbal morphology: voice"
         },
@@ -940,8 +1012,16 @@
           "value": "morphology: verbal morphology: periphrastic formations"
         },
         {
+          "id": "s",
+          "value": "syntax"
+        },
+        {
           "id": "s.-",
           "value": "syntax"
+        },
+        {
+          "id": "s.sent",
+          "value": "syntax: sentence"
         },
         {
           "id": "s.sent.-",
@@ -960,6 +1040,10 @@
           "value": "syntax: sentence: elliptic"
         },
         {
+          "id": "s.sent.concord",
+          "value": "syntax: sentence: concordance"
+        },
+        {
           "id": "s.sent.concord.-",
           "value": "syntax: sentence: concordance"
         },
@@ -972,6 +1056,10 @@
           "value": "syntax: sentence: concordance: subject attribute"
         },
         {
+          "id": "s.art",
+          "value": "syntax: article"
+        },
+        {
           "id": "s.art.-",
           "value": "syntax: article"
         },
@@ -981,6 +1069,10 @@
         },
         {
           "id": "s.art.sub",
+          "value": "syntax: article: demonstrative"
+        },
+        {
+          "id": "s.adj",
           "value": "syntax: article: demonstrative"
         },
         {
@@ -1012,6 +1104,10 @@
           "value": "syntax: adjective: superlative"
         },
         {
+          "id": "s.rel",
+          "value": "syntax: relative pronoun"
+        },
+        {
           "id": "s.rel.-",
           "value": "syntax: relative pronoun"
         },
@@ -1030,6 +1126,10 @@
         {
           "id": "s.rel.attraction",
           "value": "syntax: relative pronoun: attraction"
+        },
+        {
+          "id": "s.case",
+          "value": "syntax: cases"
         },
         {
           "id": "s.case.-",
@@ -1056,8 +1156,20 @@
           "value": "syntax: cases: vocative"
         },
         {
+          "id": "s.v",
+          "value": "syntax: verb"
+        },
+        {
+          "id": "s.v.tense",
+          "value": "syntax: verb: tense"
+        },
+        {
           "id": "s.v.tense.-",
           "value": "syntax: verb: tense"
+        },
+        {
+          "id": "s.v.tense.ind",
+          "value": "syntax: verb: tense: indicative"
         },
         {
           "id": "s.v.tense.ind.-",
@@ -1090,6 +1202,10 @@
         {
           "id": "s.v.tense.ind.fut2",
           "value": "syntax: verb: tense: indicative: future"
+        },
+        {
+          "id": "s.v.tense.subj",
+          "value": "syntax: verb: tense: subjunctive"
         },
         {
           "id": "s.v.tense.subj.-",
@@ -1128,6 +1244,10 @@
           "value": "syntax: verb: tense: optative: perfect"
         },
         {
+          "id": "s.v.tense.impt",
+          "value": "syntax: verb: tense: imperative"
+        },
+        {
           "id": "s.v.tense.impt.-",
           "value": "syntax: verb: tense: imperative"
         },
@@ -1142,6 +1262,10 @@
         {
           "id": "s.v.tense.impt.pf",
           "value": "syntax: verb: tense: imperative: perfect"
+        },
+        {
+          "id": "s.v.tense.inf",
+          "value": "syntax: verb: tense: infinitive"
         },
         {
           "id": "s.v.tense.inf.-",
@@ -1164,6 +1288,10 @@
           "value": "syntax: verb: tense: infinitive: perfect"
         },
         {
+          "id": "s.v.tense.part",
+          "value": "syntax: verb: tense: participle"
+        },
+        {
           "id": "s.v.tense.part.-",
           "value": "syntax: verb: tense: participle"
         },
@@ -1184,8 +1312,16 @@
           "value": "syntax: verb: tense: participle: perfect"
         },
         {
+          "id": "s.simple",
+          "value": "syntax: simple sentence"
+        },
+        {
           "id": "s.simple.-",
           "value": "syntax: simple sentence"
+        },
+        {
+          "id": "s.simple.mood",
+          "value": "syntax: simple sentence: moods"
         },
         {
           "id": "s.simple.mood.-",
@@ -1208,6 +1344,10 @@
           "value": "syntax: simple sentence: moods: imperative"
         },
         {
+          "id": "s.coord",
+          "value": "syntax: coordination"
+        },
+        {
           "id": "s.coord.-",
           "value": "syntax: coordination: -"
         },
@@ -1220,6 +1360,10 @@
           "value": "syntax: coordination: particles"
         },
         {
+          "id": "s.subord",
+          "value": "syntax: subordination"
+        },
+        {
           "id": "s.subord.-",
           "value": "syntax: subordination"
         },
@@ -1228,12 +1372,20 @@
           "value": "syntax: subordination: conjunctions"
         },
         {
+          "id": "s.subord.compl",
+          "value": "syntax: subordination: completive"
+        },
+        {
           "id": "s.subord.compl.decl",
           "value": "syntax: subordination: completive: declarative"
         },
         {
+          "id": "s.subord.compl.interr",
+          "value": "syntax: subordination: completive: interrogative"
+        },
+        {
           "id": "s.subord.compl.interr.-",
-          "value": "syntax: subordination: completive: interrogative.-"
+          "value": "syntax: subordination: completive: interrogative"
         },
         {
           "id": "s.subord.compl.interr.dir",
