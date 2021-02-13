@@ -2034,28 +2034,6 @@
     },
     "partSeeders": [
       {
-        "id": "seed.it.vedph.categories",
-        "options": {
-          "maxCategoriesPerItem": 3,
-          "categories": [
-            "language.phonology",
-            "language.morphology",
-            "language.syntax",
-            "literature",
-            "geography"
-          ]
-        }
-      },
-      {
-        "id": "seed.it.vedph.historical-date"
-      },
-      {
-        "id": "seed.it.vedph.keywords",
-        "options": {
-          "languages": [ "eng", "deu", "ita", "fra", "spa" ]
-        }
-      },
-      {
         "id": "seed.it.vedph.bibliography",
         "options": {
           "authors": [
@@ -2069,46 +2047,68 @@
         }
       },
       {
-        "id": "seed.it.vedph.note",
+        "id": "seed.it.vedph.categories",
         "options": {
-          "tags": [ "language", "history", "geography" ]
+          "maxCategoriesPerItem": 3,
+          "categories": [
+            "language.phonology",
+            "language.morphology",
+            "language.syntax",
+            "literature",
+            "geography"
+          ]
         }
       },
       {
-        "id": "seed.it.vedph.token-text"
+        "id": "seed.it.vedph.comment"
       },
       {
-        "id": "seed.it.vedph.tgr.available-witnesses"
+        "id": "seed.it.vedph.historical-date"
       },
       {
-        "id": "seed.it.vedph.token-text-layer",
+        "id": "seed.it.vedph.index-keywords",
         "options": {
-          "maxFragmentCount": 3
+          "languages": [ "eng", "deu", "ita", "fra", "spa" ]
         }
       },
       {
         "id": "seed.it.vedph.itinera.ms-signatures"
       },
       {
-        "id": "seed.it.vedph.tgr.ms-places"
+        "id": "seed.it.vedph.note",
+        "options": {
+          "tags": [ "language", "history", "geography" ]
+        }
+      },
+      {
+        "id": "seed.it.vedph.pura.word-forms"
       },
       {
         "id": "seed.it.vedph.tgr.ms-contents"
       },
       {
-        "id": "seed.it.vedph.tgr.ms-units"
+        "id": "seed.it.vedph.tgr.ms-history"
+      }
+      {
+        "id": "seed.it.vedph.tgr.ms-ornaments"
+      },
+      {
+        "id": "seed.it.vedph.tgr.ms-places"
       },
       {
         "id": "seed.it.vedph.tgr.ms-scripts"
       },
       {
-        "id": "seed.it.vedph.tgr.ms-formal-features"
+        "id": "seed.it.vedph.tgr.ms-units"
       },
       {
-        "id": "seed.it.vedph.tgr.ms-ornaments"
+        "id": "seed.it.vedph.token-text"
       },
       {
-        "id": "seed.it.vedph.tgr.ms-history"
+        "id": "seed.it.vedph.token-text-layer",
+        "options": {
+          "maxFragmentCount": 3
+        }
       }
     ],
     "fragmentSeeders": [
@@ -2142,12 +2142,6 @@
       },
       {
         "id": "seed.fr.it.vedph.pura.lemma-tag"
-      },
-      {
-        "id": "seed.fr.it.vedph.tgr.var-quotations"
-      },
-      {
-        "id": "seed.fr.it.vedph.tgr.interpolations"
       }
     ]
   }
