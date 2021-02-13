@@ -2051,16 +2051,28 @@
         "options": {
           "maxCategoriesPerItem": 3,
           "categories": [
-            "language.phonology",
-            "language.morphology",
-            "language.syntax",
-            "literature",
-            "geography"
+            "ph.v.-",
+            "ph.w.-",
+            "ph.vv.-",
+            "ph.c.-",
+            "mo.-",
+            "s.-"
           ]
         }
       },
       {
-        "id": "seed.it.vedph.comment"
+        "id": "seed.it.vedph.comment",
+        "options": {
+          "categories": [
+            "ph.v.-",
+            "ph.w.-",
+            "ph.vv.-",
+            "ph.c.-",
+            "mo.-",
+            "s.-"
+          ],
+          "languages": [ "eng", "ita" ]
+        }
       },
       {
         "id": "seed.it.vedph.historical-date"
@@ -2088,7 +2100,7 @@
       },
       {
         "id": "seed.it.vedph.tgr.ms-history"
-      }
+      },
       {
         "id": "seed.it.vedph.tgr.ms-ornaments"
       },
