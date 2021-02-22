@@ -3,7 +3,7 @@
     {
       "id": "lemma",
       "label": "lemma",
-      "description": "The lexicographic facet.",
+      "description": "Lexicographic facet.",
       "colorKey": "882D2D",
       "partDefinitions": [
         {
@@ -52,7 +52,7 @@
     {
       "id": "text",
       "label": "text",
-      "description": "The texts facet",
+      "description": "Texts facet",
       "colorKey": "2D882D",
       "partDefinitions": [
         {
@@ -68,11 +68,20 @@
         {
           "typeId": "it.vedph.note",
           "roleId": "transl",
-          "name": "note",
+          "name": "translation",
           "description": "Text translation.",
           "colorKey": "B0A0F8",
-          "groupKey": "general",
-          "sortKey": "note"
+          "groupKey": "text",
+          "sortKey": "translation"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "app",
+          "name": "apparatus",
+          "description": "Apparatus text.",
+          "colorKey": "B0B0F8",
+          "groupKey": "text",
+          "sortKey": "apparatus"
         },
         {
           "typeId": "it.vedph.categories",
@@ -139,7 +148,7 @@
     {
       "id": "manuscript",
       "label": "manuscript",
-      "description": "The manuscripts facet",
+      "description": "Manuscripts facet",
       "colorKey": "AA6C39",
       "partDefinitions": [
         {
@@ -232,6 +241,46 @@
           "colorKey": "C82222",
           "groupKey": "manuscript",
           "sortKey": "ms-history"
+        }
+      ]
+    },
+    {
+      "id": "article",
+      "label": "article",
+      "description": "Commentary article.",
+      "colorKey": "2D882D",
+      "partDefinitions": [
+        {
+          "typeId": "it.vedph.note",
+          "name": "note",
+          "description": "A free text note.",
+          "colorKey": "B0A0F8",
+          "groupKey": "general",
+          "sortKey": "note"
+        },
+        {
+          "typeId": "it.vedph.categories",
+          "name": "categories",
+          "description": "Item's categories.",
+          "colorKey": "98F8F8",
+          "groupKey": "general",
+          "sortKey": "categories"
+        },
+        {
+          "typeId": "it.vedph.index-keywords",
+          "name": "index keywords",
+          "description": "Index keywords.",
+          "colorKey": "588BBF",
+          "groupKey": "general",
+          "sortKey": "keywords"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "bibliography",
+          "description": "Bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "general",
+          "sortKey": "bibliography"
         }
       ]
     }
@@ -2023,6 +2072,79 @@
     {
       "id": "ling-tags@en",
       "targetId": "categories@en"
+    },
+    {
+      "id": "word-form-pos@en",
+      "entries": [
+        {
+          "id": "adj",
+          "value": "adjective"
+        },
+        {
+          "id": "adp",
+          "value": "adposition"
+        },
+        {
+          "id": "adv",
+          "value": "adverb"
+        },
+        {
+          "id": "aux",
+          "value": "auxiliary"
+        },
+        {
+          "id": "cconj",
+          "value": "coordinating conjunction"
+        },
+        {
+          "id": "det",
+          "value": "determiner"
+        },
+        {
+          "id": "intj",
+          "value": "interjection"
+        },
+        {
+          "id": "noun",
+          "value": "noun"
+        },
+        {
+          "id": "num",
+          "value": "numeral"
+        },
+        {
+          "id": "part",
+          "value": "particle"
+        },
+        {
+          "id": "pron",
+          "value": "pronoun"
+        },
+        {
+          "id": "propn",
+          "value": "proper noun"
+        },
+        {
+          "id": "punct",
+          "value": "punctuation"
+        },
+        {
+          "id": "sconj",
+          "value": "subordinating conjunction"
+        },
+        {
+          "id": "sym",
+          "value": "symbol"
+        },
+        {
+          "id": "verb",
+          "value": "verb"
+        },
+        {
+          "id": "x",
+          "value": "other"
+        }
+      ]
     }
   ],
   "seed": {
