@@ -2077,72 +2077,36 @@
       "id": "word-form-pos@en",
       "entries": [
         {
-          "id": "adj",
-          "value": "adjective"
-        },
-        {
-          "id": "adp",
-          "value": "adposition"
-        },
-        {
-          "id": "adv",
-          "value": "adverb"
-        },
-        {
-          "id": "aux",
-          "value": "auxiliary"
-        },
-        {
-          "id": "cconj",
-          "value": "coordinating conjunction"
-        },
-        {
-          "id": "det",
-          "value": "determiner"
-        },
-        {
-          "id": "intj",
-          "value": "interjection"
-        },
-        {
           "id": "noun",
           "value": "noun"
         },
         {
-          "id": "num",
-          "value": "numeral"
-        },
-        {
-          "id": "part",
-          "value": "particle"
-        },
-        {
-          "id": "pron",
-          "value": "pronoun"
-        },
-        {
-          "id": "propn",
-          "value": "proper noun"
-        },
-        {
-          "id": "punct",
-          "value": "punctuation"
-        },
-        {
-          "id": "sconj",
-          "value": "subordinating conjunction"
-        },
-        {
-          "id": "sym",
-          "value": "symbol"
+          "id": "adj",
+          "value": "adjective"
         },
         {
           "id": "verb",
           "value": "verb"
         },
         {
-          "id": "x",
-          "value": "other"
+          "id": "pron",
+          "value": "pronoun"
+        },
+        {
+          "id": "adv",
+          "value": "adverb"
+        },
+        {
+          "id": "prep",
+          "value": "preposition"
+        },
+        {
+          "id": "conj",
+          "value": "conjunction"
+        },
+        {
+          "id": "intj",
+          "value": "interjection"
         }
       ]
     }
