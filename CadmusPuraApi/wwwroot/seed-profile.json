@@ -12,40 +12,51 @@
           "description": "Word's forms.",
           "isRequired": true,
           "colorKey": "E8E0A9",
-          "groupKey": "lexicon",
-          "sortKey": "forms"
+          "groupKey": "A - lexicon",
+          "sortKey": "a"
         },
         {
           "typeId": "it.vedph.categories",
           "name": "categories",
           "description": "Categories.",
           "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
+          "groupKey": "B - classification",
+          "sortKey": "b"
         },
         {
           "typeId": "it.vedph.index-keywords",
           "name": "index keywords",
           "description": "Index keywords.",
           "colorKey": "588BBF",
-          "groupKey": "general",
-          "sortKey": "keywords"
+          "groupKey": "B - classification",
+          "sortKey": "c"
         },
         {
-          "typeId": "it.vedph.comment",
-          "name": "comment",
-          "description": "Comment.",
-          "colorKey": "B2E0AA",
-          "groupKey": "general",
-          "sortKey": "comment"
+          "typeId": "it.vedph.note",
+          "roleId": "d",
+          "name": "D",
+          "description": "Form section D.",
+          "colorKey": "B0A0F8",
+          "groupKey": "C - commentary",
+          "sortKey": "d"
         },
         {
-          "typeId": "it.vedph.bibliography",
+          "typeId": "it.vedph.note",
+          "roleId": "e",
+          "name": "E",
+          "description": "Form section E.",
+          "colorKey": "8E79EF",
+          "groupKey": "C - commentary",
+          "sortKey": "e"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "biblio",
           "name": "bibliography",
-          "description": "Bibliography.",
-          "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
+          "description": "Unstructured bibliography.",
+          "colorKey": "6F56DF",
+          "groupKey": "C - commentary",
+          "sortKey": "f"
         }
       ]
     },
@@ -63,85 +74,41 @@
           "isRequired": true,
           "colorKey": "31AB54",
           "groupKey": "text",
-          "sortKey": "text"
+          "sortKey": "a"
         },
         {
           "typeId": "it.vedph.note",
           "roleId": "transl",
           "name": "translation",
           "description": "Text translation.",
-          "colorKey": "B0A0F8",
+          "colorKey": "14983C",
           "groupKey": "text",
-          "sortKey": "translation"
+          "sortKey": "b"
         },
         {
           "typeId": "it.vedph.note",
-          "roleId": "app",
+          "roleId": "apparatus",
           "name": "apparatus",
-          "description": "Apparatus text.",
-          "colorKey": "B0B0F8",
+          "description": "Unstructured apparatus.",
+          "colorKey": "156980",
           "groupKey": "text",
-          "sortKey": "apparatus"
+          "sortKey": "c"
         },
         {
           "typeId": "it.vedph.categories",
           "name": "categories",
           "description": "Categories.",
           "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
+          "groupKey": "classification",
+          "sortKey": "d"
         },
         {
           "typeId": "it.vedph.index-keywords",
           "name": "index keywords",
           "description": "Index keywords.",
           "colorKey": "588BBF",
-          "groupKey": "general",
-          "sortKey": "keywords"
-        },
-        {
-          "typeId": "it.vedph.bibliography",
-          "name": "bibliography",
-          "description": "Bibliography.",
-          "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.apparatus",
-          "name": "apparatus",
-          "description": "Critical apparatus.",
-          "colorKey": "D4E0A4",
-          "groupKey": "text",
-          "sortKey": "text-apparatus"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.comment",
-          "name": "comments",
-          "description": "Comments on text.",
-          "colorKey": "F8D040",
-          "groupKey": "text",
-          "sortKey": "text-comments"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.tgr.ling-tags",
-          "name": "ling-tags",
-          "description": "Linguistic tags.",
-          "colorKey": "62AEEE",
-          "groupKey": "text",
-          "sortKey": "text-tags"
-        },
-        {
-          "typeId": "it.vedph.token-text-layer",
-          "roleId": "fr.it.vedph.pura.lemma-tag",
-          "name": "lemma-tags",
-          "description": "Lemma tags.",
-          "colorKey": "62EEAE",
-          "groupKey": "text",
-          "sortKey": "lemma-tags"
+          "groupKey": "classification",
+          "sortKey": "e"
         }
       ]
     },
@@ -152,45 +119,12 @@
       "colorKey": "AA6C39",
       "partDefinitions": [
         {
-          "typeId": "it.vedph.categories",
-          "name": "categories",
-          "description": "Item's categories.",
-          "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
-        },
-        {
-          "typeId": "it.vedph.historical-date",
-          "name": "date",
-          "description": "Historical date.",
-          "isRequired": true,
-          "colorKey": "F898F8",
-          "groupKey": "general",
-          "sortKey": "date"
-        },
-        {
-          "typeId": "it.vedph.note",
-          "name": "note",
-          "description": "A free text note.",
-          "colorKey": "B0A0F8",
-          "groupKey": "general",
-          "sortKey": "note"
-        },
-        {
-          "typeId": "it.vedph.bibliography",
-          "name": "bibliography",
-          "description": "Bibliography.",
-          "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
-        },
-        {
-          "typeId": "it.vedph.itinera.ms-signatures",
+          "typeId": "it.vedph.tgr.ms-signatures",
           "name": "ms signatures",
           "description": "Manuscript's signatures.",
           "colorKey": "D7D5DB",
-          "groupKey": "manuscript",
-          "sortKey": "ms-signatures",
+          "groupKey": "A - identity",
+          "sortKey": "a",
           "isRequired": true
         },
         {
@@ -198,89 +132,74 @@
           "name": "ms places",
           "description": "Manuscript's place(s) of origin.",
           "colorKey": "41943B",
-          "groupKey": "manuscript",
-          "sortKey": "ms-places",
+          "groupKey": "B - date and place",
+          "sortKey": "b",
           "isRequired": true
+        },
+        {
+          "typeId": "it.vedph.historical-date",
+          "name": "date",
+          "description": "Historical date.",
+          "isRequired": true,
+          "colorKey": "F898F8",
+          "groupKey": "B - date and place",
+          "sortKey": "c"
         },
         {
           "typeId": "it.vedph.tgr.ms-contents",
           "name": "ms contents",
           "description": "Manuscript's contents.",
           "colorKey": "508B5E",
-          "groupKey": "manuscript",
-          "sortKey": "ms-contents"
+          "groupKey": "C - description",
+          "sortKey": "d"
         },
         {
           "typeId": "it.vedph.tgr.ms-units",
           "name": "ms units",
           "description": "Manuscript's units.",
           "colorKey": "C880C4",
-          "groupKey": "manuscript",
-          "sortKey": "ms-units"
+          "groupKey": "C - description",
+          "sortKey": "e"
         },
         {
           "typeId": "it.vedph.tgr.ms-scripts",
           "name": "ms scripts",
           "description": "Manuscript's scripts.",
           "colorKey": "F5C2B1",
-          "groupKey": "manuscript",
-          "sortKey": "ms-scripts"
+          "groupKey": "C - description",
+          "sortKey": "f"
         },
         {
           "typeId": "it.vedph.tgr.ms-ornaments",
           "name": "ms ornaments",
           "description": "Manuscript's ornamentations.",
           "colorKey": "4D5EF7",
-          "groupKey": "manuscript",
-          "sortKey": "ms-ornaments"
+          "groupKey": "C - description",
+          "sortKey": "g"
         },
         {
           "typeId": "it.vedph.tgr.ms-history",
           "name": "ms history",
           "description": "Manuscript's history.",
           "colorKey": "C82222",
-          "groupKey": "manuscript",
-          "sortKey": "ms-history"
-        }
-      ]
-    },
-    {
-      "id": "article",
-      "label": "article",
-      "description": "Commentary article.",
-      "colorKey": "2D882D",
-      "partDefinitions": [
-        {
-          "typeId": "it.vedph.note",
-          "name": "note",
-          "description": "A free text note.",
-          "colorKey": "B0A0F8",
-          "groupKey": "general",
-          "sortKey": "note"
-        },
-        {
-          "typeId": "it.vedph.categories",
-          "name": "categories",
-          "description": "Item's categories.",
-          "colorKey": "98F8F8",
-          "groupKey": "general",
-          "sortKey": "categories"
-        },
-        {
-          "typeId": "it.vedph.index-keywords",
-          "name": "index keywords",
-          "description": "Index keywords.",
-          "colorKey": "588BBF",
-          "groupKey": "general",
-          "sortKey": "keywords"
+          "groupKey": "C - description",
+          "sortKey": "h"
         },
         {
           "typeId": "it.vedph.bibliography",
           "name": "bibliography",
           "description": "Bibliography.",
           "colorKey": "20B2AA",
-          "groupKey": "general",
-          "sortKey": "bibliography"
+          "groupKey": "D - other",
+          "sortKey": "i"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "name": "note",
+          "description": "A free text note.",
+          "colorKey": "B0A0F8",
+          "groupKey": "D - other",
+          "sortKey": "j"
         }
       ]
     }
@@ -324,10 +243,6 @@
           "value": "keywords"
         },
         {
-          "id": "it.vedph.comment",
-          "value": "comment"
-        },
-        {
           "id": "it.vedph.bibliography",
           "value": "bibliography"
         },
@@ -344,27 +259,11 @@
           "value": "text layer"
         },
         {
-          "id": "fr.it.vedph.apparatus",
-          "value": "apparatus fr."
-        },
-        {
-          "id": "fr.it.vedph.comment",
-          "value": "comment fr."
-        },
-        {
-          "id": "fr.it.vedph.tgr.ling-tags",
-          "value": "ling.tags fr."
-        },
-        {
-          "id": "fr.it.vedph.pura.lemma-tag",
-          "value": "lemma tags"
-        },
-        {
           "id": "it.vedph.historical-date",
           "value": "date"
         },
         {
-          "id": "it.vedph.itinera.ms-signatures",
+          "id": "it.vedph.tgr.ms-signatures",
           "value": "ms signatures"
         },
         {
@@ -2147,20 +2046,6 @@
         }
       },
       {
-        "id": "seed.it.vedph.comment",
-        "options": {
-          "categories": [
-            "ph.v.-",
-            "ph.w.-",
-            "ph.vv.-",
-            "ph.c.-",
-            "mo.-",
-            "s.-"
-          ],
-          "languages": [ "eng", "ita" ]
-        }
-      },
-      {
         "id": "seed.it.vedph.historical-date"
       },
       {
@@ -2170,7 +2055,7 @@
         }
       },
       {
-        "id": "seed.it.vedph.itinera.ms-signatures"
+        "id": "seed.it.vedph.tgr.ms-signatures"
       },
       {
         "id": "seed.it.vedph.note",
@@ -2201,46 +2086,8 @@
       },
       {
         "id": "seed.it.vedph.token-text"
-      },
-      {
-        "id": "seed.it.vedph.token-text-layer",
-        "options": {
-          "maxFragmentCount": 3
-        }
       }
     ],
-    "fragmentSeeders": [
-      {
-        "id": "seed.fr.it.vedph.comment",
-        "options": {
-          "tags": [ "language", "history", "geography" ]
-        }
-      },
-      {
-        "id": "seed.fr.it.vedph.apparatus"
-      },
-      {
-        "id": "seed.fr.it.vedph.tgr.ling-tags",
-        "options": {
-          "entries": [
-            {
-              "id": "a.syl.accentus.a",
-              "value": "syllaba: accentus/tenor: acutus/ὀξεῖα"
-            },
-            {
-              "id": "a.syl.accentus.c",
-              "value": "syllaba: accentus/tenor: circumflexus/περισπωμένη"
-            },
-            {
-              "id": "a.syl.accentus.g",
-              "value": "syllaba: accentus/tenor: gravis/βαρεῖα"
-            }
-          ]
-        }
-      },
-      {
-        "id": "seed.fr.it.vedph.pura.lemma-tag"
-      }
-    ]
+    "fragmentSeeders": []
   }
 }
