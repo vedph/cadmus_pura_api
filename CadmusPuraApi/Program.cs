@@ -93,7 +93,9 @@ namespace CadmusPuraApi
                     })
                     .UseSerilog()
                     .Build()
-                    .SeedAsync(); // see Services/HostSeedExtension
+                    // see Services/HostSeedExtension
+                    // TODO: pass Pura graph SQL from static helper
+                    .SeedAsync(true, true, null);
 
                 host.Run();
 
