@@ -29,6 +29,9 @@ using Cadmus.Api.Services;
 using System.Linq;
 using Microsoft.AspNetCore.HttpOverrides;
 using Cadmus.Pura.Services;
+using Cadmus.Index.Graph;
+using Cadmus.Index.MySql;
+using Cadmus.Index.Sql;
 
 namespace CadmusPuraApi
 {
@@ -249,6 +252,17 @@ namespace CadmusPuraApi
             services.AddSingleton<IItemIndexFactoryProvider>(_ =>
                 new StandardItemIndexFactoryProvider(
                     indexCS));
+
+            // graph repository
+            services.AddSingleton<IGraphRepository>(_ =>
+            {
+                var repository = new MySqlGraphRepository();
+                repository.Configure(new SqlOptions
+                {
+                    ConnectionString = indexCS
+                });
+                return repository;
+            });
 
             // swagger
             ConfigureSwaggerServices(services);
