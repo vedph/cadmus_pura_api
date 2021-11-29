@@ -12,6 +12,7 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+- 2021-11-29: updated packages.
 - 2021-11-11: upgraded to NET 6.
 - 2021-10-24: updated packages integrating graph SQL seeding.
 - 2021-10-23: updated packages.
