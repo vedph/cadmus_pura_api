@@ -51,6 +51,15 @@
         },
         {
           "typeId": "it.vedph.note",
+          "roleId": "f",
+          "name": "F",
+          "description": "Form section F.",
+          "colorKey": "8EEFEF",
+          "groupKey": "C - commentary",
+          "sortKey": "f"
+        },
+        {
+          "typeId": "it.vedph.note",
           "roleId": "biblio",
           "name": "bibliography",
           "description": "Unstructured bibliography.",
