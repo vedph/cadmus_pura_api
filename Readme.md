@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus_pura_api:2.0.3 -t vedph2020/cadmus_pura_api:latest
+docker build . -t vedph2020/cadmus_pura_api:2.1.0 -t vedph2020/cadmus_pura_api:latest
 ```
 
 (replace with the current version).
@@ -12,16 +12,23 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
-- 2021-12-22: updated `Cadmus.Api.Controller`. Docker: 2.0.3.
+### 2.1.0
 
-- 2021-12-20: updated packages, generated Docker image 2.0.2.
+- 2022-05-02: upgraded core to NET 6.0.
 
-- 2021-12-06: generated Docker image 2.0.1.
+### 2.0.3
+
+- 2021-12-22: updated `Cadmus.Api.Controller`.
+
+### 2.0.2
+
+- 2021-12-20: updated packages.
+
+### 2.0.1
 
 - 2021-11-29: updated packages and added graph support with these operations:
 
 1. in `appsettings.json`, under `Indexing`, add `"IsGraphEnabled": true` to enable the graph. Currently this is set to false as we don't know it this feature will be used.
-
 2. in `ConfigureServices.cs`, ensure that you configure the graph repository:
 
 ```cs
