@@ -29,7 +29,6 @@ using Cadmus.Api.Services;
 using System.Linq;
 using Microsoft.AspNetCore.HttpOverrides;
 using Cadmus.Pura.Services;
-using Cadmus.Index.Graph;
 using Cadmus.Index.MySql;
 using Cadmus.Index.Sql;
 
@@ -126,7 +125,7 @@ namespace CadmusPuraApi
                     IConfigurationSection jwtSection = Configuration.GetSection("Jwt");
                     string key = jwtSection["SecureKey"];
                     if (string.IsNullOrEmpty(key))
-                        throw new ApplicationException("Required JWT SecureKey not found");
+                        throw new InvalidOperationException("Required JWT SecureKey not found");
 
                     options.SaveToken = true;
                     options.RequireHttpsMetadata = false;
@@ -227,7 +226,7 @@ namespace CadmusPuraApi
                 ApplicationUserRepository>();
 
             // messaging
-            // TODO: you can use another mailer service here. In this case,
+            // you can use another mailer service here. In this case,
             // also change the types in ConfigureOptionsServices.
             services.AddTransient<IMailerService, DotNetMailerService>();
             services.AddTransient<IMessageBuilderService,
@@ -253,15 +252,15 @@ namespace CadmusPuraApi
                     indexCS));
 
             // graph repository
-            services.AddSingleton<IGraphRepository>(_ =>
-            {
-                var repository = new MySqlGraphRepository();
-                repository.Configure(new SqlOptions
-                {
-                    ConnectionString = indexCS
-                });
-                return repository;
-            });
+            //services.AddSingleton<IGraphRepository>(_ =>
+            //{
+            //    var repository = new MySqlGraphRepository();
+            //    repository.Configure(new SqlOptions
+            //    {
+            //        ConnectionString = indexCS
+            //    });
+            //    return repository;
+            //});
 
             // swagger
             ConfigureSwaggerServices(services);
@@ -275,7 +274,6 @@ namespace CadmusPuraApi
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.WithExceptionDetails()
                 .WriteTo.Console()
-                /*.WriteTo.MSSqlServer(Configuration["Serilog:ConnectionString"],*/
                 .WriteTo.MongoDBCapped(Configuration["Serilog:ConnectionString"],
                     cappedMaxSizeMb: !string.IsNullOrEmpty(maxSize) &&
                         int.TryParse(maxSize, out int n) && n > 0 ? n : 10)
