@@ -12,6 +12,10 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+- 2022-10-11:
+  - updated packages and injection in `Startup.cs` for new `IRepositoryProvider`.
+  - added preview.
+
 ### 2.1.3
 
 - 2022-06-13: updated packages.

@@ -29,8 +29,9 @@ using Cadmus.Api.Services;
 using System.Linq;
 using Microsoft.AspNetCore.HttpOverrides;
 using Cadmus.Pura.Services;
-using Cadmus.Index.MySql;
-using Cadmus.Index.Sql;
+using Cadmus.Core.Storage;
+using System.Globalization;
+using Cadmus.Export.Preview;
 
 namespace CadmusPuraApi
 {
@@ -189,6 +190,52 @@ namespace CadmusPuraApi
             });
         }
 
+        private CadmusPreviewer GetPreviewer(IServiceProvider provider)
+        {
+            // get dependencies
+            ICadmusRepository repository =
+                    provider.GetService<IRepositoryProvider>().CreateRepository();
+            ICadmusPreviewFactoryProvider factoryProvider =
+                new StandardCadmusPreviewFactoryProvider();
+
+            // nope if disabled
+            if (!Configuration.GetSection("Preview").GetSection("IsEnabled")
+                .Get<bool>())
+            {
+                return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
+                    repository);
+            }
+
+            // get profile source
+            ILogger logger = provider.GetService<ILogger>();
+            IHostEnvironment env = provider.GetService<IHostEnvironment>();
+            string path = Path.Combine(env.ContentRootPath,
+                "wwwroot", "preview-profile.json");
+            if (!File.Exists(path))
+            {
+                Console.WriteLine($"Preview profile expected at {path} not found");
+                logger.Error($"Preview profile expected at {path} not found");
+                return new CadmusPreviewer(factoryProvider.GetFactory("{}"),
+                    repository);
+            }
+
+            // load profile
+            Console.WriteLine($"Loading preview profile from {path}...");
+            logger.Information($"Loading preview profile from {path}...");
+            string profile;
+            using (StreamReader reader = new(new FileStream(
+                path, FileMode.Open, FileAccess.Read, FileShare.Read), Encoding.UTF8))
+            {
+                profile = reader.ReadToEnd();
+            }
+            CadmusPreviewFactory factory = factoryProvider.GetFactory(profile);
+            factory.ConnectionString = string.Format(CultureInfo.InvariantCulture,
+                Configuration.GetConnectionString("Default"),
+                Configuration.GetValue<string>("DatabaseNames:Data"));
+
+            return new CadmusPreviewer(factory, repository);
+        }
+
         /// <summary>
         /// Configures the services.
         /// </summary>
@@ -235,7 +282,12 @@ namespace CadmusPuraApi
             // configuration
             services.AddSingleton(_ => Configuration);
             // repository
-            services.AddSingleton<IRepositoryProvider, PuraRepositoryProvider>();
+            string dataCS = string.Format(
+              Configuration.GetConnectionString("Default"),
+              Configuration.GetValue<string>("DatabaseNames:Data"));
+            services.AddSingleton<IRepositoryProvider>(
+              _ => new PuraRepositoryProvider { ConnectionString = dataCS });
+
             // part seeder factory provider
             services.AddSingleton<IPartSeederFactoryProvider,
                 PuraPartSeederFactoryProvider>();
@@ -248,19 +300,10 @@ namespace CadmusPuraApi
                 Configuration.GetConnectionString("Index"),
                 Configuration.GetValue<string>("DatabaseNames:Data"));
             services.AddSingleton<IItemIndexFactoryProvider>(_ =>
-                new StandardItemIndexFactoryProvider(
-                    indexCS));
+                new StandardItemIndexFactoryProvider(indexCS));
 
-            // graph repository
-            //services.AddSingleton<IGraphRepository>(_ =>
-            //{
-            //    var repository = new MySqlGraphRepository();
-            //    repository.Configure(new SqlOptions
-            //    {
-            //        ConnectionString = indexCS
-            //    });
-            //    return repository;
-            //});
+            // previewer
+            services.AddSingleton(p => GetPreviewer(p));
 
             // swagger
             ConfigureSwaggerServices(services);
@@ -304,13 +347,21 @@ namespace CadmusPuraApi
                 app.UseExceptionHandler("/Error");
                 if (Configuration.GetValue<bool>("Server:UseHSTS"))
                 {
-                    Console.WriteLine("Using HSTS");
+                    Console.WriteLine("HSTS: yes");
                     app.UseHsts();
                 }
+                else Console.WriteLine("HSTS: no");
             }
 
-            app.UseHttpsRedirection();
+            if (Configuration.GetValue<bool>("Server:UseHttpsRedirection"))
+            {
+                Console.WriteLine("HttpsRedirection: yes");
+                app.UseHttpsRedirection();
+            }
+            else Console.WriteLine("HttpsRedirection: no");
+
             app.UseRouting();
+
             // CORS
             app.UseCors("CorsPolicy");
             app.UseAuthentication();
