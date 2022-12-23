@@ -3,7 +3,7 @@
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus_pura_api:2.1.3 -t vedph2020/cadmus_pura_api:latest
+docker build . -t vedph2020/cadmus_pura_api:2.2.0 -t vedph2020/cadmus_pura_api:latest
 ```
 
 (replace with the current version).
@@ -12,6 +12,9 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+### 2.2.0
+
+- 2022-12-23: updated packages.
 - 2022-11-10: upgraded to NET 7.
 - 2022-10-11:
   - updated packages and injection in `Startup.cs` for new `IRepositoryProvider`.
