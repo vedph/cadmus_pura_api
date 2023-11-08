@@ -12,6 +12,8 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+- 2023-11-08: updated packages.
+
 ### 3.0.1
 
 - 2023-09-19: updated packages.
