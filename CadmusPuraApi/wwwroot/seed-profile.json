@@ -209,7 +209,7 @@
           "name": "s-bibliography",
           "description": "Structured bibliography.",
           "colorKey": "20B2AA",
-          "groupKey": "D - other",
+          "groupKey": "bibliography",
           "sortKey": "g"
         },
         {
@@ -217,7 +217,7 @@
           "name": "note",
           "description": "A free text note.",
           "colorKey": "B0A0F8",
-          "groupKey": "bibliography",
+          "groupKey": "other",
           "sortKey": "h"
         }
       ]

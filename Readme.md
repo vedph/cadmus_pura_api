@@ -12,6 +12,8 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+- 2023-11-13: fixed seed profile for manuscript.
+
 ### 4.0.0
 
 - ⚠️ 2023-11-13:
