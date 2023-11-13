@@ -74,6 +74,14 @@
           "colorKey": "6F56DF",
           "groupKey": "C - commentary",
           "sortKey": "h"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "s-bibliography",
+          "description": "Structured bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "C - commentary",
+          "sortKey": "i"
         }
       ]
     },
@@ -152,87 +160,160 @@
           "sortKey": "a"
         },
         {
-          "typeId": "it.vedph.tgr.ms-signatures",
-          "name": "ms signatures",
-          "description": "Manuscript's signatures.",
-          "colorKey": "D7D5DB",
-          "groupKey": "A - identity",
-          "sortKey": "b",
-          "isRequired": true
-        },
-        {
-          "typeId": "it.vedph.tgr.ms-places",
-          "name": "ms places",
-          "description": "Manuscript's place(s) of origin.",
-          "colorKey": "41943B",
-          "groupKey": "B - date and place",
-          "sortKey": "c",
-          "isRequired": true
-        },
-        {
           "typeId": "it.vedph.historical-date",
           "name": "date",
           "description": "Historical date.",
           "isRequired": true,
-          "colorKey": "F898F8",
-          "groupKey": "B - date and place",
+          "colorKey": "E08E45",
+          "groupKey": "general",
+          "sortKey": "b"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "a",
+          "name": "A",
+          "description": "A - Description.",
+          "colorKey": "F8F4A6",
+          "groupKey": "forms",
+          "sortKey": "c"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "b",
+          "name": "B",
+          "description": "B - Contents.",
+          "colorKey": "BDF7B7",
+          "groupKey": "forms",
           "sortKey": "d"
         },
         {
-          "typeId": "it.vedph.tgr.ms-contents",
-          "name": "ms contents",
-          "description": "Manuscript's contents.",
-          "colorKey": "508B5E",
-          "groupKey": "C - description",
+          "typeId": "it.vedph.note",
+          "roleId": "c",
+          "name": "C",
+          "description": "C - History.",
+          "colorKey": "444FC5",
+          "groupKey": "forms",
           "sortKey": "e"
         },
         {
-          "typeId": "it.vedph.tgr.ms-units",
-          "name": "ms units",
-          "description": "Manuscript's units.",
-          "colorKey": "C880C4",
-          "groupKey": "C - description",
+          "typeId": "it.vedph.note",
+          "roleId": "biblio",
+          "name": "bibliography",
+          "description": "Unstructured bibliography.",
+          "colorKey": "6F56DF",
+          "groupKey": "bibliography",
           "sortKey": "f"
         },
         {
-          "typeId": "it.vedph.tgr.ms-scripts",
-          "name": "ms scripts",
-          "description": "Manuscript's scripts.",
-          "colorKey": "F5C2B1",
-          "groupKey": "C - description",
-          "sortKey": "g"
-        },
-        {
-          "typeId": "it.vedph.tgr.ms-ornaments",
-          "name": "ms ornaments",
-          "description": "Manuscript's ornamentations.",
-          "colorKey": "4D5EF7",
-          "groupKey": "C - description",
-          "sortKey": "h"
-        },
-        {
-          "typeId": "it.vedph.tgr.ms-history",
-          "name": "ms history",
-          "description": "Manuscript's history.",
-          "colorKey": "C82222",
-          "groupKey": "C - description",
-          "sortKey": "i"
-        },
-        {
           "typeId": "it.vedph.bibliography",
-          "name": "bibliography",
-          "description": "Bibliography.",
+          "name": "s-bibliography",
+          "description": "Structured bibliography.",
           "colorKey": "20B2AA",
           "groupKey": "D - other",
-          "sortKey": "j"
+          "sortKey": "g"
         },
         {
           "typeId": "it.vedph.note",
           "name": "note",
           "description": "A free text note.",
           "colorKey": "B0A0F8",
-          "groupKey": "D - other",
-          "sortKey": "k"
+          "groupKey": "bibliography",
+          "sortKey": "h"
+        }
+      ]
+    },
+    {
+      "id": "lexicon",
+      "label": "lexicon",
+      "description": "Authors or lexicons.",
+      "colorKey": "5F9EA0",
+      "partDefinitions": [
+        {
+          "typeId": "it.vedph.metadata",
+          "name": "metadata",
+          "description": "Item's metadata.",
+          "colorKey": "F8C0C0",
+          "groupKey": "general",
+          "sortKey": "a"
+        },
+        {
+          "typeId": "it.vedph.index-keywords",
+          "name": "index keywords",
+          "description": "Index keywords.",
+          "colorKey": "588BBF",
+          "groupKey": "general",
+          "sortKey": "b"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "gen",
+          "name": "generalities",
+          "description": "Generalities.",
+          "colorKey": "F0F8FF",
+          "groupKey": "forms",
+          "sortKey": "c"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "trn",
+          "name": "transmission",
+          "description": "Transmission, editions, and reference studies.",
+          "colorKey": "FFE4C4",
+          "groupKey": "forms",
+          "sortKey": "d"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "cnt",
+          "name": "content",
+          "description": "Content and structure.",
+          "colorKey": "8A2BE2",
+          "groupKey": "forms",
+          "sortKey": "e"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "src",
+          "name": "sources",
+          "description": "Sources.",
+          "colorKey": "DEB887",
+          "groupKey": "forms",
+          "sortKey": "f"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "can",
+          "name": "canon",
+          "description": "Canon.",
+          "colorKey": "7FFF00",
+          "groupKey": "forms",
+          "sortKey": "g"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "trm",
+          "name": "terminology",
+          "description": "Evaluative terminology.",
+          "colorKey": "7FFFD4",
+          "groupKey": "forms",
+          "sortKey": "h"
+        },
+        {
+          "typeId": "it.vedph.note",
+          "roleId": "biblio",
+          "name": "bibliography",
+          "description": "Unstructured bibliography.",
+          "colorKey": "6F56DF",
+          "groupKey": "bibliography",
+          "sortKey": "c"
+        },
+        {
+          "typeId": "it.vedph.bibliography",
+          "name": "s-bibliography",
+          "description": "Structured bibliography.",
+          "colorKey": "20B2AA",
+          "groupKey": "bibliography",
+          "sortKey": "d"
         }
       ]
     }
@@ -240,15 +321,15 @@
   "flags": [
     {
       "id": 1,
-      "label": "complete",
-      "description": "The item is complete.",
-      "colorKey": "F0B880"
+      "label": "draft",
+      "description": "The item is a draft.",
+      "colorKey": "DA2C38"
     },
     {
       "id": 2,
-      "label": "revised",
-      "description": "The item has been revised.",
-      "colorKey": "80F080"
+      "label": "abc",
+      "description": "The item contains ABC only.",
+      "colorKey": "009FB7"
     }
   ],
   "index": {
@@ -298,34 +379,6 @@
         {
           "id": "it.vedph.historical-date",
           "value": "date"
-        },
-        {
-          "id": "it.vedph.tgr.ms-signatures",
-          "value": "ms signatures"
-        },
-        {
-          "id": "it.vedph.tgr.ms-places",
-          "value": "ms places"
-        },
-        {
-          "id": "it.vedph.tgr.ms-contents",
-          "value": "ms contents"
-        },
-        {
-          "id": "it.vedph.tgr.ms-units",
-          "value": "ms units"
-        },
-        {
-          "id": "it.vedph.tgr.ms-scripts",
-          "value": "ms scripts"
-        },
-        {
-          "id": "it.vedph.tgr.ms-ornaments",
-          "value": "ms ornaments"
-        },
-        {
-          "id": "it.vedph.tgr.ms-history",
-          "value": "ms history"
         }
       ]
     },
@@ -2095,9 +2148,6 @@
         }
       },
       {
-        "id": "seed.it.vedph.tgr.ms-signatures"
-      },
-      {
         "id": "seed.it.vedph.note",
         "options": {
           "tags": [ "language", "history", "geography" ]
@@ -2105,24 +2155,6 @@
       },
       {
         "id": "seed.it.vedph.pura.word-forms"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-contents"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-history"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-ornaments"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-places"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-scripts"
-      },
-      {
-        "id": "seed.it.vedph.tgr.ms-units"
       },
       {
         "id": "seed.it.vedph.token-text"

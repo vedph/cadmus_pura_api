@@ -1,9 +1,9 @@
-# Cadmus PURA API
+﻿# Cadmus PURA API
 
 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus-pura-api:3.0.1 -t vedph2020/cadmus-pura-api:latest
+docker build . -t vedph2020/cadmus-pura-api:4.0.0 -t vedph2020/cadmus-pura-api:latest
 ```
 
 (replace with the current version).
@@ -12,6 +12,15 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+### 4.0.0
+
+- ⚠️ 2023-11-13:
+  - updated packages removing TGR dependencies.
+  - refactored configuration:
+    - changed flags.
+    - added structured bibliography to lemma facet.
+    - replaced all the TGR ms item parts with generic notes.
+    - added new item for lexicons.
 - 2023-11-08: updated packages.
 
 ### 3.0.1
