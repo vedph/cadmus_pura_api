@@ -33,7 +33,6 @@ using Cadmus.Core.Storage;
 using Cadmus.Export.Preview;
 using Cadmus.Graph;
 using Cadmus.Graph.Extras;
-using Cadmus.Index.Sql;
 using Cadmus.Graph.Ef.PgSql;
 using Cadmus.Graph.Ef;
 
@@ -81,7 +80,7 @@ public sealed class Startup
 
     private void ConfigureCorsServices(IServiceCollection services)
     {
-        string[] origins = new[] { "http://localhost:4200" };
+        string[] origins = ["http://localhost:4200"];
 
         IConfigurationSection section = Configuration.GetSection("AllowedOrigins");
         if (section.Exists())
@@ -199,8 +198,7 @@ public sealed class Startup
         // get dependencies
         ICadmusRepository repository =
                 provider.GetService<IRepositoryProvider>()!.CreateRepository();
-        ICadmusPreviewFactoryProvider factoryProvider =
-            new StandardCadmusPreviewFactoryProvider();
+        StandardCadmusPreviewFactoryProvider factoryProvider = new();
 
         // nope if disabled
         if (!Configuration.GetSection("Preview").GetSection("IsEnabled")
@@ -211,7 +209,7 @@ public sealed class Startup
         }
 
         // get profile source
-        Serilog.ILogger? logger = provider.GetService<Serilog.ILogger>();
+        ILogger? logger = provider.GetService<ILogger>();
         IHostEnvironment env = provider.GetService<IHostEnvironment>()!;
         string path = Path.Combine(env.ContentRootPath,
             "wwwroot", "preview-profile.json");
@@ -359,7 +357,7 @@ public sealed class Startup
         ConfigureGraphServices(services);
 
         // previewer
-        services.AddSingleton(p => GetPreviewer(p));
+        services.AddSingleton(GetPreviewer);
 
         // swagger
         ConfigureSwaggerServices(services);

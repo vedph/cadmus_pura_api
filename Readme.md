@@ -12,6 +12,12 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+### 5.0.0
+
+- 2024-03-01:
+  - upgraded to .NET 8.
+  - [refactored logging](https://myrmex.github.io/overview/cadmus/dev/history/b-logging-cfg/).
+
 - 2023-11-13: fixed seed profile for manuscript.
 
 ### 4.0.0
