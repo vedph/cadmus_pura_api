@@ -1,9 +1,9 @@
 ﻿# Cadmus PURA API
 
-Quick Docker image build:
+🐋 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus-pura-api:4.0.0 -t vedph2020/cadmus-pura-api:latest
+docker build . -t vedph2020/cadmus-pura-api:5.0.0 -t vedph2020/cadmus-pura-api:latest
 ```
 
 (replace with the current version).
@@ -15,7 +15,7 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 ### 5.0.0
 
 - 2024-03-01:
-  - upgraded to .NET 8.
+  - ⚠️ upgraded to .NET 8.
   - [refactored logging](https://myrmex.github.io/overview/cadmus/dev/history/b-logging-cfg/).
 
 - 2023-11-13: fixed seed profile for manuscript.
