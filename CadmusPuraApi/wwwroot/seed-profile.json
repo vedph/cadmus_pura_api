@@ -160,13 +160,21 @@
           "sortKey": "a"
         },
         {
-          "typeId": "it.vedph.historical-date",
-          "name": "date",
-          "description": "Historical date.",
+          "typeId": "it.vedph.chronotopes",
+          "name": "chronotopes",
+          "description": "Date(s) and/or place(s).",
           "isRequired": true,
           "colorKey": "E08E45",
           "groupKey": "general",
           "sortKey": "b"
+        },
+        {
+          "typeId": "it.vedph.index-keywords",
+          "name": "index keywords",
+          "description": "Index keywords.",
+          "colorKey": "588BBF",
+          "groupKey": "classification",
+          "sortKey": "c"
         },
         {
           "typeId": "it.vedph.note",
@@ -175,7 +183,7 @@
           "description": "A - Description.",
           "colorKey": "F8F4A6",
           "groupKey": "forms",
-          "sortKey": "c"
+          "sortKey": "d"
         },
         {
           "typeId": "it.vedph.note",
@@ -184,7 +192,7 @@
           "description": "B - Contents.",
           "colorKey": "BDF7B7",
           "groupKey": "forms",
-          "sortKey": "d"
+          "sortKey": "e"
         },
         {
           "typeId": "it.vedph.note",
@@ -193,7 +201,7 @@
           "description": "C - History.",
           "colorKey": "444FC5",
           "groupKey": "forms",
-          "sortKey": "e"
+          "sortKey": "f"
         },
         {
           "typeId": "it.vedph.note",
@@ -202,7 +210,7 @@
           "description": "Unstructured bibliography.",
           "colorKey": "6F56DF",
           "groupKey": "bibliography",
-          "sortKey": "f"
+          "sortKey": "g"
         },
         {
           "typeId": "it.vedph.bibliography",
@@ -379,6 +387,10 @@
         {
           "id": "it.vedph.historical-date",
           "value": "date"
+        },
+        {
+          "id": "it.vedph.chronotopes",
+          "value": "chronotopes"
         }
       ]
     },

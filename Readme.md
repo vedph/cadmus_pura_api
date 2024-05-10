@@ -12,6 +12,23 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+- 2024-05-10:
+  - updated packages.
+  - added keywords to manuscript item.
+  - replaced historical date with chronotopes for manuscript item. The previous part definition was:
+
+```json
+{
+    "typeId": "it.vedph.historical-date",
+    "name": "date",
+    "description": "Historical date.",
+    "isRequired": true,
+    "colorKey": "E08E45",
+    "groupKey": "general",
+    "sortKey": "b"
+},
+```
+
 ### 5.0.0
 
 - 2024-03-01:
