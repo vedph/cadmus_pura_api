@@ -304,6 +304,10 @@ public sealed class Startup
         // CORS (before MVC)
         ConfigureCorsServices(services);
 
+        // proxy
+        services.AddHttpClient();
+        services.AddResponseCaching();
+
         // base services
         services.AddControllers();
         // camel-case JSON in response
@@ -426,6 +430,9 @@ public sealed class Startup
         app.UseCors("CorsPolicy");
         app.UseAuthentication();
         app.UseAuthorization();
+
+        // proxy
+        app.UseResponseCaching();
 
         app.UseEndpoints(endpoints => endpoints.MapControllers());
 

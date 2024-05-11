@@ -3,7 +3,7 @@
 🐋 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus-pura-api:5.0.0 -t vedph2020/cadmus-pura-api:latest
+docker build . -t vedph2020/cadmus-pura-api:5.1.0 -t vedph2020/cadmus-pura-api:latest
 ```
 
 (replace with the current version).
@@ -12,8 +12,11 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+### 5.1.0
+
 - 2024-05-10:
   - updated packages.
+  - added [proxy controller](https://github.com/vedph/proxy-api) for DBPedia API.
   - added keywords to manuscript item.
   - replaced historical date with chronotopes for manuscript item. The previous part definition was:
 
