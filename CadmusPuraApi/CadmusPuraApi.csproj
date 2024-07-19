@@ -10,15 +10,15 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCore.Identity.Mongo" Version="8.3.3" />
-    <PackageReference Include="Cadmus.Api.Controllers" Version="9.0.6" />
-    <PackageReference Include="Cadmus.Api.Models" Version="9.0.6" />
-    <PackageReference Include="Cadmus.Api.Services" Version="9.0.6" />
+    <PackageReference Include="Cadmus.Api.Controllers" Version="9.0.7" />
+    <PackageReference Include="Cadmus.Api.Models" Version="9.0.7" />
+    <PackageReference Include="Cadmus.Api.Services" Version="9.0.7" />
     <PackageReference Include="Cadmus.Graph.Extras" Version="7.0.3" />
-    <PackageReference Include="Cadmus.Pura.Services" Version="8.0.3" />
-    <PackageReference Include="Cadmus.Seed.General.Parts" Version="6.1.0" />
-    <PackageReference Include="Cadmus.Seed.Pura.Parts" Version="8.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.6" />
+    <PackageReference Include="Cadmus.Pura.Services" Version="8.0.4" />
+    <PackageReference Include="Cadmus.Seed.General.Parts" Version="6.1.2" />
+    <PackageReference Include="Cadmus.Seed.Pura.Parts" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.7" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Polly" Version="8.4.1" />
