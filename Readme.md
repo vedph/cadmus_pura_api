@@ -3,7 +3,7 @@
 🐋 Quick Docker image build:
 
 ```bash
-docker build . -t vedph2020/cadmus-pura-api:5.1.0 -t vedph2020/cadmus-pura-api:latest
+docker build . -t vedph2020/cadmus-pura-api:5.1.1 -t vedph2020/cadmus-pura-api:latest
 ```
 
 (replace with the current version).
@@ -12,6 +12,9 @@ This is a Cadmus API layer customized for the PURA project. Most of its code is 
 
 ## History
 
+### 5.1.1
+
+- 2024-08-06: updated packages.
 - 2024-07-26: updated packages.
 - 2024-07-19: updated packages.
 - 2024-07-02: updated packages.
