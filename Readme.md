@@ -1,17 +1,20 @@
 ﻿# Cadmus PURA API
 
-🐋 Quick Docker image build:
+🐋 Quick Docker image build (you need to have a `buildx` container):
 
 ```bash
-docker build . -t vedph2020/cadmus-pura-api:5.1.1 -t vedph2020/cadmus-pura-api:latest
+docker buildx create --use
+
+docker buildx build . --platform linux/amd64,linux/arm64 -t vedph2020/cadmus-pura-api:5.1.1 -t vedph2020/cadmus-pura-api:latest --push
 ```
 
 (replace with the current version).
 
-This is a Cadmus API layer customized for the PURA project. Most of its code is derived from shared Cadmus libraries. See the [documentation](https://github.com/vedph/cadmus_doc/blob/master/guide/api.md) for more.
+This is a Cadmus API layer customized for the PURA project. Most of its code is derived from shared Cadmus libraries. See the [documentation](https://vedph.github.io/cadmus-doc/) for more.
 
 ## History
 
+- 2025-01-29: updated packages.
 - 2025-01-06: updated packages.
 
 ### 5.1.1
